@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="69" height="51.783" viewBox="0 0 69 51.783">
+  <g id="Group_14" data-name="Group 14" transform="translate(1.5 1.5)">
+    <path id="Path" d="M26.913,37.652a8.609,8.609,0,0,1-6.087,2.521H5.739A5.739,5.739,0,0,1,0,34.435V5.739A5.739,5.739,0,0,1,5.739,0H60.261A5.739,5.739,0,0,1,66,5.739v28.7a5.739,5.739,0,0,1-5.739,5.739H45.175a8.609,8.609,0,0,1-6.087-2.521l-4.058-4.058a2.87,2.87,0,0,0-4.058,0Z" transform="translate(0 8.609)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Rectangle" d="M2.718,3.173A5.739,5.739,0,0,1,7.851,0H49.54a5.739,5.739,0,0,1,5.133,3.173l2.718,5.436H0Z" transform="translate(4.304 0)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Rectangle_Copy" data-name="Rectangle Copy" d="M0,2.87A2.87,2.87,0,0,1,2.87,0H51.652a2.87,2.87,0,0,1,2.87,2.87V25.826a2.87,2.87,0,0,1-2.87,2.87H41.116a5.739,5.739,0,0,1-4.058-1.681L29.29,19.246a2.87,2.87,0,0,0-4.058,0l-7.768,7.768A5.739,5.739,0,0,1,13.405,28.7H2.87A2.87,2.87,0,0,1,0,25.826Z" transform="translate(5.739 14.348)" fill="#4d1961"/>
+    <circle id="Oval_Copy_3" data-name="Oval Copy 3" cx="5.739" cy="5.739" r="5.739" transform="translate(12.913 21.522)" fill="#4d1961"/>
+    <circle id="Oval_Copy_2" data-name="Oval Copy 2" cx="5.739" cy="5.739" r="5.739" transform="translate(41.609 21.522)" fill="#4d1961"/>
+    <circle id="Oval" cx="5.739" cy="5.739" r="5.739" stroke-width="3" transform="translate(12.913 21.522)" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+    <circle id="Oval_Copy" data-name="Oval Copy" cx="5.739" cy="5.739" r="5.739" transform="translate(41.609 21.522)" stroke-width="3" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+  </g>
+</svg>

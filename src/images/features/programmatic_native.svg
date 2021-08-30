@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="63" height="72" viewBox="0 0 63 72">
+  <g id="Group_31" data-name="Group 31" transform="translate(1.5 1.5)">
+    <path id="Polygon" d="M13.448,1.8a6,6,0,0,1,6.1,0l10.5,6.2A6,6,0,0,1,33,13.174V25.826a6,6,0,0,1-2.948,5.166l-10.5,6.2a6,6,0,0,1-6.1,0l-10.5-6.2A6,6,0,0,1,0,25.826V13.174A6,6,0,0,1,2.948,8.008Z" transform="translate(13.5 15)" fill="#4d1961"/>
+    <path id="Path" d="M0,6,10.5,0,21,6" transform="translate(19.5)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_Copy_2" data-name="Path Copy 2" d="M0,18V6L10.5,0" transform="translate(0 11.25)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_Copy" data-name="Path Copy" d="M0,0,10.5,6,21,0" transform="translate(19.5 63)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_Copy_3" data-name="Path Copy 3" d="M0,0,10.5,6,21,0" transform="translate(19.5 28.5)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path-2" data-name="Path" d="M0,4.5,7.5,0" transform="translate(51 18)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_Copy_8" data-name="Path Copy 8" d="M0,4.5,7.5,0" transform="translate(1.5 46.5)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path-3" data-name="Path" d="M.75,0V10.5" transform="translate(29.25 34.5)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_Copy_9" data-name="Path Copy 9" d="M.75,0V9" transform="translate(29.25 1.5)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_Copy_10" data-name="Path Copy 10" d="M.75,0V9" transform="translate(29.25 58.5)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_Copy_4" data-name="Path Copy 4" d="M0,0V12l10.5,6" transform="translate(0 39.75)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path-4" data-name="Path" d="M0,0,7.5,4.5" transform="translate(51 45.75)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_Copy_7" data-name="Path Copy 7" d="M0,0,7.5,4.5" transform="translate(1.5 18.75)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_Copy_6" data-name="Path Copy 6" d="M10.5,18V6L0,0" transform="translate(49.5 11.25)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_Copy_5" data-name="Path Copy 5" d="M10.5,0V12L0,18" transform="translate(49.5 39.75)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+  </g>
+</svg>

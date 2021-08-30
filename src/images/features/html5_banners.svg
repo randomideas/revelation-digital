@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63">
+  <g id="Group_17_Copy" data-name="Group 17 Copy" transform="translate(1.5 1.5)">
+    <rect id="Rectangle" width="60" height="60" rx="6" stroke-width="3" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="48" height="18" rx="3" transform="translate(6 13.5)" fill="#4d1961"/>
+    <rect id="Rectangle_2_Copy" data-name="Rectangle 2 Copy" width="15" height="18" rx="3" transform="translate(6 36)" fill="#4d1961"/>
+    <rect id="Rectangle_2_Copy_2" data-name="Rectangle 2 Copy 2" width="28.5" height="18" rx="3" transform="translate(25.5 36)" fill="#4d1961"/>
+    <path id="Line" d="M0,1.5H1.5" transform="translate(7.5 6)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Line_Copy" data-name="Line Copy" d="M0,1.5H1.5" transform="translate(15 6)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Line_Copy_2" data-name="Line Copy 2" d="M0,1.5H1.5" transform="translate(22.5 6)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+  </g>
+</svg>

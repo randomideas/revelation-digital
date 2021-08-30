@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65">
+  <g id="Group_30" data-name="Group 30" transform="translate(1.5 1.5)">
+    <circle id="Combined_Shape" data-name="Combined Shape" cx="25.609" cy="25.609" r="25.609" transform="translate(5.391 5.391)" fill="#4d1961"/>
+    <circle id="Oval" cx="31" cy="31" r="31" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path" d="M0,0C2.67,5.606,4.321,13.337,4.321,21.875S2.67,38.143,0,43.749" transform="translate(41.505 9.125)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path-2" data-name="Path" d="M4.321,43.749C1.65,38.143,0,30.412,0,21.875S1.65,5.606,4.321,0" transform="translate(16.174 9.125)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path-3" data-name="Path" d="M0,4.321C5.606,1.65,13.337,0,21.875,0S38.143,1.65,43.749,4.321" transform="translate(9.125 16.174)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path-4" data-name="Path" d="M43.749,0C38.143,2.67,30.412,4.321,21.875,4.321S5.606,2.67,0,0" transform="translate(9.125 41.505)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Rectangle_13" data-name="Rectangle 13" d="M0,48.522V0" transform="translate(31 6.739)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Rectangle" d="M0,0H48.522" transform="translate(6.739 31)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+  </g>
+</svg>

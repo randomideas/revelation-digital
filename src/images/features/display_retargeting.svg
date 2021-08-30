@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69">
+  <g id="Group_15" data-name="Group 15" transform="translate(1.5 1.5)">
+    <circle id="Oval_10" data-name="Oval 10" cx="27.261" cy="27.261" r="27.261" transform="translate(5.739 5.739)" stroke-width="3" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+    <circle id="Oval_10_Copy" data-name="Oval 10 Copy" cx="21.522" cy="21.522" r="21.522" transform="translate(11.478 11.478)" fill="#4d1961"/>
+    <circle id="Oval_10_Copy_3" data-name="Oval 10 Copy 3" cx="12.913" cy="12.913" r="12.913" transform="translate(20.087 20.087)" fill="#4d1961"/>
+    <circle id="Oval_10_Copy_2" data-name="Oval 10 Copy 2" cx="11.478" cy="11.478" r="11.478" transform="translate(21.522 21.522)" stroke-width="3" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+    <path id="Line_3" data-name="Line 3" d="M1.435,0V8.609" transform="translate(31.565 28.696)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Line_4" data-name="Line 4" d="M0,1.435H8.609" transform="translate(28.696 31.565)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Line" d="M1.435,0V5.739" transform="translate(31.565 0)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Line_Copy" data-name="Line Copy" d="M1.435,0V5.739" transform="translate(31.565 60.261)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Line_2" data-name="Line 2" d="M0,1.435H5.739" transform="translate(0 31.565)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Line_2_Copy" data-name="Line 2 Copy" d="M0,1.435H5.739" transform="translate(60.261 31.565)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+  </g>
+</svg>

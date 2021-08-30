@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69">
+  <g id="Group_11" data-name="Group 11" transform="translate(1.5 1.5)">
+    <path id="Path" d="M0,50.217l1.132-6.795a5.739,5.739,0,0,1,1.6-3.115L16.971,26.072a5.739,5.739,0,0,0,1.681-4.058V16.995A11.478,11.478,0,0,1,22.96,8.032L33,0,43.04,8.032a11.478,11.478,0,0,1,4.308,8.963v5.019a5.739,5.739,0,0,0,1.681,4.058L63.265,40.308a5.739,5.739,0,0,1,1.6,3.115L66,50.217Z" transform="translate(0 0)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Rectangle" d="M0,9.862A5.739,5.739,0,0,1,2.065,5.453L8.609,0l6.544,5.453a5.739,5.739,0,0,1,2.065,4.409V34.435a2.87,2.87,0,0,1-2.87,2.87H2.87A2.87,2.87,0,0,1,0,34.435Z" transform="translate(24.391 7.174)" fill="#4d1961"/>
+    <circle id="Oval_Copy" data-name="Oval Copy" cx="2.87" cy="2.87" r="2.87" transform="translate(30.13 15.783)" fill="#4d1961"/>
+    <path id="Path-2" data-name="Path" d="M.717,14.348V0" transform="translate(17.935 35.87)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_Copy" data-name="Path Copy" d="M.717,14.348V0" transform="translate(46.63 35.87)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_Copy_2" data-name="Path Copy 2" d="M.717,8.609V0" transform="translate(32.283 57.391)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_Copy_3" data-name="Path Copy 3" d="M.717,4.3V0" transform="translate(23.674 57.391)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_Copy_4" data-name="Path Copy 4" d="M.717,4.3V0" transform="translate(40.891 57.391)" fill="none" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <circle id="Oval" cx="2.87" cy="2.87" r="2.87" stroke-width="3" transform="translate(30.13 15.783)" stroke="#b019d4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+  </g>
+</svg>

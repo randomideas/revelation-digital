@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Texta';
+    src: url('Texta-Medium.eot');
+    src: local('☞Texta-Medium'), local('Texta-Medium'),
+        url('Texta-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Texta-Medium.woff2') format('woff2'),
+        url('Texta-Medium.woff') format('woff'),
+        url('Texta-Medium.ttf') format('truetype'),
+        url('Texta-Medium.svg#Texta-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('Texta-Black.eot');
+    src: local('☞Texta-Black'), local('Texta-Black'),
+        url('Texta-Black.eot?#iefix') format('embedded-opentype'),
+        url('Texta-Black.woff2') format('woff2'),
+        url('Texta-Black.woff') format('woff'),
+        url('Texta-Black.ttf') format('truetype'),
+        url('Texta-Black.svg#Texta-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('Texta-Bold.eot');
+    src: local('☞Texta-Bold'), local('Texta-Bold'),
+        url('Texta-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Texta-Bold.woff2') format('woff2'),
+        url('Texta-Bold.woff') format('woff'),
+        url('Texta-Bold.ttf') format('truetype'),
+        url('Texta-Bold.svg#Texta-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('BebasNeueBold.eot');
+    src: local('Bebas Neue Bold'), local('BebasNeueBold'),
+        url('BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+        url('BebasNeueBold.woff2') format('woff2'),
+        url('BebasNeueBold.woff') format('woff'),
+        url('BebasNeueBold.ttf') format('truetype'),
+        url('BebasNeueBold.svg#BebasNeueBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
