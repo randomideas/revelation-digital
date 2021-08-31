@@ -1,11 +1,29 @@
 import React, {Component} from 'react';
+import ReactWOW from 'react-wow'
 import Layout from "../components/layout"
 import { Helmet } from "react-helmet"
 
 class Contact extends Component {
 	
+	constructor(props) {
+    super(props);
+    
+        this.clickHandler = this.clickHandler.bind(this);
+   
+  }
+	clickHandler(param){
 	
-	
+		var items = document.getElementsByClassName("contact-card-body");
+		 for (var i=0; i < items.length; i++) {
+			items[i].classList.remove("active");
+		}
+		var items = document.getElementsByClassName("jsContactCardTrigger");
+		 for (var i=0; i < items.length; i++) {
+			items[i].classList.remove("active");
+		}
+		document.getElementById("contact-card-"+param).classList.add("active"); 
+		document.getElementById("id-"+param).classList.add("active"); 
+	}
 	render() {
 		var base = this.props.pageContext.Data.data.additional_data.Contact;
 		return (
@@ -55,7 +73,7 @@ class Contact extends Component {
 								<div className="col col--4 col--sm-12">
 									<div className="contact-where-text jsContactCardMenu ">
 										{base.locations.map((proplocations,i) => {return (
-											<a href="#contact-card-<?php echo get_row_index(); ?>" className="jsContactCardTrigger block text-bebas text-bebas--big text-bebas--stroke">{proplocations.title}</a>
+										<a href="javascript:;" id={"id-"+i} onClick={() => this.clickHandler(i)}  className={(i == 0) ? ("jsContactCardTrigger block text-bebas text-bebas--big text-bebas--stroke active") : ("jsContactCardTrigger block text-bebas text-bebas--big text-bebas--stroke")}>{proplocations.title}</a>
 										)})}
 									</div>
 								</div>
@@ -63,13 +81,13 @@ class Contact extends Component {
 									<div className="contact-card" data-stellar-ratio="1.1">
 										{base.locations.map((proplocations,i) => {return (
 											<>
-											<div id="contact-card-" className="contact-card-body">
+										<div id={"contact-card-"+i} className={(i == 0) ? ("contact-card-body active") : ("contact-card-body")}>
 												<img src={proplocations.image.url} alt={proplocations.image.alt} />
 												<div className="contact-card-text">
 													<p className="text-bebas text-bebas--big text-bebas--stroke contact-card-big-text">{proplocations.title2}</p>
 													  <address>
-														<p>{proplocations.address}</p>
-														<p>{proplocations.phone}</p>
+														<p dangerouslySetInnerHTML={{ __html: proplocations.address}} />
+														<p dangerouslySetInnerHTML={{ __html: proplocations.phone}} />
 													  </address>
 												</div>
 											</div>

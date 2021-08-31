@@ -13,6 +13,12 @@ module.exports = {
    * Gatsby has a rich ecosystem of plugins.
    * If you need any more you can search here: https://www.gatsbyjs.com/plugins/
    */
+  siteMetadata: {
+    title: `Revelation Digital`,
+    description: `The csi agency.`,
+    author: `@revelationdigital`,
+	siteUrl: 'https://revelation.digital/',
+  }, 
   plugins: [
     /**
      * The following two plugins are required if you want to use Gatsby image

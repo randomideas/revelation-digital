@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ReactWOW from 'react-wow'
 import Layout from "../components/layout"
 import Nav from "../components/Common/Nav"
 import Testimonials from "../components/Common/Testimonials"

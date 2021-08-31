@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ReactWOW from 'react-wow'
 import Layout from "../components/layout"
 import { Helmet } from "react-helmet"
 import GetTouch from "../components/Common/GetTouch"
