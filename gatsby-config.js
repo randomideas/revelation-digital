@@ -35,7 +35,24 @@ module.exports = {
         icon: `content/assets/gatsby-icon.png`,
       },
     },
-
+	{
+        resolve: `gatsby-plugin-advanced-sitemap`,
+        options: {
+           
+            // The filepath and name to Index Sitemap. Defaults to '/sitemap.xml'.
+            output: "/sitemap.xml",
+            
+        }
+    },
+	{
+    resolve: `gatsby-plugin-nprogress`,
+    options: {
+      // Setting a color is optional.
+      color: "#9b03c3",
+      // Disable the loading spinner.
+      showSpinner: true,
+    },
+  },
     // See https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet/?=gatsby-plugin-react-helmet
     `gatsby-plugin-react-helmet`,
 

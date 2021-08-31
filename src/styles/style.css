@@ -9438,6 +9438,21 @@ Homepage
   background-size: cover;
   position: relative;
 }
+
+.get-in-touch::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 7.6388888889vw;
+    display: block;
+    background: url(../images/triangle-top-white.svg) center bottom no-repeat;
+        background-size: auto;
+    background-size: 100% 105%;
+}
+
+
 @media screen and (min-width: 1600px) {
   .get-in-touch {
     padding: 266.6666666667px 0 133.3333333333px;

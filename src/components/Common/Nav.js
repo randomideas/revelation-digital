@@ -27,7 +27,7 @@ class Nav extends Component {
 						<>
 						{this.state.pagedata.map((prop,i) => {return (
 							<>
-							<a data-tip={prop.tooltip} href={prop.title.toLowerCase()} className={(prop.title === page) ? ("is_active") : ("")} data-tippy-content={prop.tooltip}>{prop.title}</a>
+							<a data-tip={prop.tooltip} href={prop.title.toLowerCase()} className={(prop.title === page) ? ("is_active") : ("")} data-tippy-content={prop.tooltip}>{prop.title}.</a>
 							<ReactTooltip place="bottom" type="dark" effect="float"/>
 							</>
 						)})}

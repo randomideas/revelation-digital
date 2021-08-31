@@ -31,7 +31,7 @@ class Testimonials extends Component {
 		return (
 			<div className="home-testimonials">
 				<div className="line-vertical-center-wrapper line-vertical-center-wrapper--top-over">
-					<div className="line-vertical-center"></div>
+					<div className="line-vertical-center is_active"></div>
 				</div>
 				<div className="diagonal-line"></div>
 				<div className="container">
