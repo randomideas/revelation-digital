@@ -6,17 +6,15 @@ import GetTouch from "../components/Common/GetTouch"
 
 class CSD extends Component {
 	
-	
-	
 	render() {
-		console.log(this.props.pageContext.Data);
+		
 		var img = this.props.pageContext.Data.Data.hero_image.url;
-		console.log(this.props.pageContext.Data);
 		var sectionStyle = { 
 		  backgroundImage: `url(${img})`
 		};
 		
 		return (
+		
 			<Layout>
 				<>
 				<Helmet>
@@ -56,11 +54,12 @@ class CSD extends Component {
 				
 				<GetTouch/>
 				</>
-			</Layout>	
+			</Layout>
+			
 		)
+		
 	}
+	
 }
-
-
 
 export default CSD

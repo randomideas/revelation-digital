@@ -22,9 +22,11 @@ class ClientStory extends Component {
 				</Helmet>
 				<section className="client-stories-hero-section" style={ sectionStyle }	>
 					<div className="container">
+						<ReactWOW  animation='fadeInRight'>
 						<div className="client-stories-hero-text">
 							<h1 className="text-bebas text-bebas--big text--pink text-bebas--no-letter-spacing" dangerouslySetInnerHTML={{ __html: base.title }} />
 						</div>
+						</ReactWOW>
 					</div>
 					<div className="line-vertical-center-wrapper line-vertical-center-wrapper--bottom">
 						<div className="line-vertical-center is_active"></div>

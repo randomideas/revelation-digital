@@ -7,10 +7,10 @@ import cloud2 from '../images/cloud2.png';
 
 class Creative extends Component {
 	
-	
 	render() {
 		
 		return (
+		
 			<Layout>
 				<>
 					<Helmet>
@@ -31,10 +31,10 @@ class Creative extends Component {
 					</div>
 				</>
 			</Layout>	
+		
 		)
+	
 	}
 }
-
-
 
 export default Creative

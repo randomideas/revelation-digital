@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import axios from "axios"
+import ReactWOW from 'react-wow'
+
 
 class GetTouch extends Component {
 	
@@ -29,10 +31,15 @@ class GetTouch extends Component {
 							</div>
 							<div className="container container-980">
 								<div className="row row--80">
+									<ReactWOW  animation='fadeInUp'>
 									<div className="col col--6 col--sm-12" >
 										<h2 dangerouslySetInnerHTML={{ __html: this.state.pagedata.get_in_touch_heading}} />
 									</div>
+									</ReactWOW>
+									
+									<ReactWOW delay='0.3s'  animation='fadeInUp'>
 									<div className="col col--6 col--sm-12" dangerouslySetInnerHTML={{ __html: this.state.pagedata.get_in_touch_text}} />
+									</ReactWOW>
 								</div>
 							</div>
 						</div>

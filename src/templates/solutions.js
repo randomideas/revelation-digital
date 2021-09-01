@@ -22,8 +22,11 @@ class Solutions extends Component {
 					<title>Page title | Revelation Digital - Eye-Opening Programmatic Media</title>
 				</Helmet>
 				<div className="solutions_content">
+					<ReactWOW delay='0.6s' animation='fadeInLeft'>
 					<div className="solutions_intro" dangerouslySetInnerHTML={{ __html: base.hero_text_column_left }} />
+					</ReactWOW>
 					<div className="solutions_quads">
+						<ReactWOW delay='0.8s' animation='fadeInUp'>
 						<a className="solutions_quad" href="/reveal/">
 							<div>
 								<h2>R<span>eveal</span>.</h2>
@@ -31,6 +34,8 @@ class Solutions extends Component {
 							</div>
 							<video src={Torus} autoPlay playsInline muted loop></video>
 						</a>
+						</ReactWOW>
+						<ReactWOW delay='0.9s' animation='fadeInUp'>
 						<a className="solutions_quad" href="/relate/">
 							<div>
 								<h2>R<span>elate</span>.</h2>
@@ -38,6 +43,8 @@ class Solutions extends Component {
 							</div>
 							<video src={Float} autoPlay playsInline muted loop></video>
 						</a>
+						</ReactWOW>
+						<ReactWOW delay='1s' animation='fadeInUp'>
 						<a className="solutions_quad"  href="/resonate/">
 							<div>
 								<h2>R<span>esonate</span>.</h2>
@@ -45,6 +52,8 @@ class Solutions extends Component {
 							</div>
 							<video src={Pump} autoPlay playsInline muted loop></video>
 						</a>
+						</ReactWOW>
+						<ReactWOW delay='1.1s' animation='fadeInUp'>
 						<a className="solutions_quad"  href="/rejoice/">
 							<div>
 								<h2>R<span>ejoice</span>.</h2>
@@ -52,6 +61,7 @@ class Solutions extends Component {
 							</div>
 							<video src={Sprial} autoPlay playsInline muted loop></video>
 						</a>
+						</ReactWOW>
 
 		</div>
 				</div>

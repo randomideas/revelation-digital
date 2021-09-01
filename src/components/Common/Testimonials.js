@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import axios from "axios"
 import Slider from "react-slick";
+import ReactWOW from 'react-wow'
 
 class Testimonials extends Component {
 	
@@ -35,10 +36,12 @@ class Testimonials extends Component {
 				</div>
 				<div className="diagonal-line"></div>
 				<div className="container">
+					<ReactWOW  animation='fadeInLeft'>
 					<div className="text">
 					{(this.state.showInfo === 1) ? (<h2 dangerouslySetInnerHTML={{ __html: this.state.pagedata.title}} />) : ("")}
 						
 					</div>
+					</ReactWOW>
 				</div>
 				<div className="testimonials-slider">
 					{(this.state.showInfo === 1) ? (
@@ -50,11 +53,13 @@ class Testimonials extends Component {
 								<div className="img stellar testimonial_hero" data-stellar-ratio="1.1">
 									<img className="pull-right" src={prop.img} />
 								</div>
+								<ReactWOW  animation='fadeInUp'>
 								<div className="text">
 									<h4>{prop.title}</h4>
 									<span dangerouslySetInnerHTML={{ __html: prop.content}}/>
 									<a href="" className="read-more">SEE THE STORY</a>
 								</div>
+								</ReactWOW>
 							</div>
 						</div>
 						)})}

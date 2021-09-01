@@ -27,9 +27,11 @@ class Reveal extends Component {
 				<div className="hero-solution--single" style={ sectionStyle }>
 					<div className="container">
 						<div className="hero-text">
+							 <ReactWOW  animation='fadeInUp'>
 							 <h1 className="text-bebas   text-bebas--ultra-big text--pink solution_flare solution_flare_60">{base.hero_title}</h1>
-							<h2  >{base.hero_subtitle}</h2>
-							<h3 >{base.hero_text}</h3>
+							 </ReactWOW>
+							<ReactWOW delay='1s' animation='fadeInUp'><h2>{base.hero_subtitle}</h2></ReactWOW>
+							<ReactWOW delay='1.4s' animation='fadeInUp'><h3>{base.hero_text}</h3></ReactWOW>
 						</div>
 					</div>
 				</div>
@@ -40,11 +42,13 @@ class Reveal extends Component {
 					{(prop.acf_fc_layout === "text_image") ? (
 						<div className={(i % 2 == 0) ? ("text-image") : ("text-image text-image--alt")} style={{backgroundImage: "url("+prop.image.url+")"}} >
 							<div className="container">
+								<ReactWOW animation='fadeInUp'>
 								<div className="text">
 									<span dangerouslySetInnerHTML={{ __html: prop.text }} ></span>
 									
 									<a href="https://vimeo.com/325733520" className="read-more solution-read-more" data-fancybox="">See Example</a>
 								</div>
+								</ReactWOW>
 							</div>
 						</div>
 					) : ("")}
@@ -54,7 +58,9 @@ class Reveal extends Component {
 					{(prop.acf_fc_layout === "simple_text") ? (
 						<div className="section--normal-margin">
 							<div className="container">
+								<ReactWOW  animation='fadeInLeft'>
 								<p className="text-bebas text-bebas--big text-bebas--white" dangerouslySetInnerHTML={{ __html: prop.text }} />
+								</ReactWOW>
 							</div>
 						</div>
 					) : ("")}
@@ -80,15 +86,19 @@ class Reveal extends Component {
 					{(prop.acf_fc_layout === "features") ? (
 						<div className="section--normal-margin">
 							<div className="container">
+								<ReactWOW  animation='fadeInLeft'>
 								<h2 className={(prop.title_center == true)? ("text-bebas text-bebas--big text--pink features-title features-title--center") : ("text-bebas text-bebas--big text--pink features-title")} dangerouslySetInnerHTML={{ __html: prop.title }} />
+								</ReactWOW>
 
 						<div className={(prop.three_cols == true) ? ("features-table features-table--3") : ("features-table")}>
 							{prop.table.map((proptable,k) => {return (	
+							<ReactWOW  animation='zoomIn' delay={'0.'+((k+1)*2)+'s'} >
 							<div className="item  ">
 								<img src={proptable.icon.url} alt=""/>
 								<h4>{proptable.title} </h4>
 								  <p>{proptable.text}</p>
 							</div>
+							</ReactWOW>
 						   )})} 
 						</div>
 

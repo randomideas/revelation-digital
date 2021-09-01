@@ -4,13 +4,13 @@ import Layout from "../components/layout"
 import { Helmet } from "react-helmet"
 import cloud1 from '../images/cloud1.png';
 import cloud2 from '../images/cloud2.png';
+
 class BriefUs extends Component {
-	
-	
 	
 	render() {
 		
 		return (
+		
 			<Layout>
 				<>
 					<Helmet>
@@ -31,10 +31,10 @@ class BriefUs extends Component {
 					</div>
 				</>
 			</Layout>	
+		
 		)
+	
 	}
 }
-
-
 
 export default BriefUs

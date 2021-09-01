@@ -7,11 +7,10 @@ import cloud2 from '../images/cloud2.png';
 
 class Privacy extends Component {
 	
-	
-	
 	render() {
-		console.log(this.props.pageContext.Data);
+		
 		return (
+		
 			<Layout>
 				<>
 				<Helmet>
@@ -32,8 +31,11 @@ class Privacy extends Component {
 				</div>
 				</>
 			</Layout>	
+		
 		)
+	
 	}
+	
 }
 
 

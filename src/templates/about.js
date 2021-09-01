@@ -23,14 +23,18 @@ class AboutUs extends Component {
 					<div className="container">
 						<div className="row row--00">
 							<div className="col col--6 col--sm-12">
+								<ReactWOW delay='0.4s' animation='fadeInLeft'>
 								<div className="top-section-text" data-wow-delay="0.4s">
 									<h1 className="text-bebas text-bebas--big text-bebas--white text-bebas--no-letter-spacing" dangerouslySetInnerHTML={{ __html: base.about_intro_heading}} />
 								</div>
+								</ReactWOW>
 							</div>
 							<div className="col col--6 col--sm-12">
+								<ReactWOW delay='0.8s' animation='fadeInUp'>
 								<div className="top-section-paragraph" data-wow-delay="0.8s">
 									<span dangerouslySetInnerHTML={{ __html: base.about_intro_text}} />
 								</div>
+								</ReactWOW>
 							</div>
 						</div>
 					</div>
@@ -43,7 +47,9 @@ class AboutUs extends Component {
 						<div className="col col--6 col--sm-12">
 							<div className="smoke-wrapper"></div>
 							<div className="pink-wrapper-text"></div>
+							<ReactWOW  animation='fadeInUp'>
 							<h2 className="  text-bebas text-bebas--ultra-big text-bebas--stroke text-bebas--stroke-white" dangerouslySetInnerHTML={{ __html: base.about_intro_outline_text}} />
+							</ReactWOW>
 						</div>
 						<div className="col col--6 col--sm-12" data-stellar-ratio="1.3">
 							<img src={base.about_intro_image.url} className="about-top-intro-image"  width="1234" height="787" />
@@ -55,12 +61,16 @@ class AboutUs extends Component {
 						{base.about_text.map((prop,i) => {return (
 						<div className="divided-text-wrapper">
 							<div className="row">
+								<ReactWOW  animation='fadeInUp'>
 								<div className="col col--5 col--sm-12 ">
 									<h3 className="text-bebas text-bebas--big text--pink" dangerouslySetInnerHTML={{ __html: prop.title}} />
 								</div>
+								</ReactWOW>
+								<ReactWOW delay='0.3s' animation='fadeInUp'>
 								<div className="col col--6 col--sm-12" data-wow-delay="0.3s">
 									<div className="content-area" dangerouslySetInnerHTML={{ __html: prop.text}} />	
 								</div>
+								</ReactWOW>
 							</div>
 						</div>
 						)})}
@@ -73,7 +83,9 @@ class AboutUs extends Component {
 					</div>
 					<div className="container">
 						{base.about_quote_line.map((propquote,i) => {return (
+						<ReactWOW  animation='fadeInUp'>
 						<p className={"text-bebas text-bebas--big text-bebas--white line"+(i+1)} dangerouslySetInnerHTML={{ __html: propquote.quote}} />
+						</ReactWOW>
 						)})}
 					</div>
 				</section>

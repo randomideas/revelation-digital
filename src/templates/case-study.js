@@ -7,11 +7,10 @@ import cloud2 from '../images/cloud2.png';
 
 class CaseStudy extends Component {
 	
-	
-	
 	render() {
 		
 		return (
+		
 			<Layout>
 				<>
 					<Helmet>
@@ -31,11 +30,12 @@ class CaseStudy extends Component {
 						</div>
 					</div>
 				</>
-			</Layout>	
+			</Layout>
+			
 		)
+		
 	}
+	
 }
-
-
 
 export default CaseStudy

@@ -36,10 +36,14 @@ class Contact extends Component {
 					<div className="container container-980">
 						<div className="row row--65">
 							<div className="col col--7 col--sm-12">
+								<ReactWOW  animation='fadeInUp'>
 								<h1 className="">{base.hero_title}<span>{base.hero_subtitle}</span></h1>
+								</ReactWOW>
 							</div>
 							<div className="col col--5 col--sm-12">
+								<ReactWOW  animation='fadeInUp'>
 								<p className="" data-stellar-delay=".3s" dangerouslySetInnerHTML={{ __html: base.hero_text}} />
+								</ReactWOW>
 							</div>
 						</div>
 					</div>
@@ -49,14 +53,18 @@ class Contact extends Component {
 					<div className="would-like">
 					  <div className="row">
 						<div className="col col--6 col--sm-12">
-						  <p className=" ">{base.contact_title}</p>
+							<ReactWOW  animation='fadeInLeft'>
+							<p className=" ">{base.contact_title}</p>
+							</ReactWOW>
 						</div>    
 						<div className="col col--6 col--sm-12">
+						  <ReactWOW  animation='fadeInUp'>
 						  <ul className=" ">
 							{base.forms.map((propforms,i) => {return (
 							<li><a href="#" className= "jsPopupToggle" data-popup={"#contact-popup-"+(i+1)}>{propforms.title}</a></li>
 							)})}
 						  </ul>
+						  </ReactWOW>
 						  <div className="line-vertical-left-wrapper">
 							<div className="line-vertical-left is_active"></div>
 						  </div>
@@ -71,11 +79,13 @@ class Contact extends Component {
 							<div className="row">
 								<div className="col col--1">&nbsp;</div>
 								<div className="col col--4 col--sm-12">
+								<ReactWOW  animation='fadeInUp'>
 									<div className="contact-where-text jsContactCardMenu ">
 										{base.locations.map((proplocations,i) => {return (
 										<a href="javascript:;" id={"id-"+i} onClick={() => this.clickHandler(i)}  className={(i == 0) ? ("jsContactCardTrigger block text-bebas text-bebas--big text-bebas--stroke active") : ("jsContactCardTrigger block text-bebas text-bebas--big text-bebas--stroke")}>{proplocations.title}</a>
 										)})}
 									</div>
+									</ReactWOW>
 								</div>
 								<div className="col col--6 col--sm-12">
 									<div className="contact-card" data-stellar-ratio="1.1">

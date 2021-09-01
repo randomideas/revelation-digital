@@ -11,9 +11,14 @@ import flare from "../images/hero/flare.png"
 import smoke3 from "../images/hero/smoke3.png"
 import Testimonials from "../components/Common/Testimonials"
 import GetTouch from "../components/Common/GetTouch"
+import Parallax from 'parallax-js'
+
 class Home extends Component {
 	
-	
+	componentDidMount() {
+		var scene = document.getElementById('scene');
+		var parallaxInstance = new Parallax(scene);
+	}
 	
 	render() {
 		var base = this.props.pageContext.Data.data.additional_data.Home;
@@ -36,8 +41,8 @@ class Home extends Component {
 				</div>
 				<div className="hero-home-title">
 					<div className="text">
-						<h1 className=" " data-wow-delay="0.4s">{base.hero_title}</h1>
-						<p className=" " data-wow-delay="0.8s">{base.hero_second_text}</p>
+						<ReactWOW delay='0.4s' animation='fadeInUp'><h1 className=" " data-wow-delay="0.4s">{base.hero_title}</h1></ReactWOW>
+						<ReactWOW delay='0.4s' animation='fadeInUp'><p className=" " data-wow-delay="0.8s">{base.hero_second_text}</p></ReactWOW>
 					</div>
 					<div className="line-vertical-center-wrapper">
 						<div className="line-vertical-center is_active"></div>
@@ -45,17 +50,17 @@ class Home extends Component {
 				</div>
 				<div className="home-text-1">
 					<div className="container">
-						<h2 className="" dangerouslySetInnerHTML={{ __html: base.intro_section_heading}} />
-						<h3 className="" dangerouslySetInnerHTML={{ __html: base.intro_section_subheading}} />
+						<ReactWOW  animation='fadeInLeft'><h2 className="" dangerouslySetInnerHTML={{ __html: base.intro_section_heading}} /></ReactWOW>
+						<ReactWOW  animation='fadeInRight'><h3 className="" dangerouslySetInnerHTML={{ __html: base.intro_section_subheading}} /></ReactWOW>
 						<div className="row row--100">
 							<div className="col col--7 col--sm-12">
-								<p className="" dangerouslySetInnerHTML={{ __html: base.intro_section_paragraph}} />
+								<ReactWOW  animation='fadeInLeft'><p className="" dangerouslySetInnerHTML={{ __html: base.intro_section_paragraph}} /></ReactWOW>
 							</div>
 							<div className="col col--5 col--sm-12">
-								<a href={base.intro_section_learn_more_link.url}  className="btn btn-purple">{base.intro_section_learn_more_link.title}</a>
+								<ReactWOW  animation='fadeInUp'><a href={base.intro_section_learn_more_link.url}  className="btn btn-purple">{base.intro_section_learn_more_link.title}</a></ReactWOW>
 							</div>
 						</div>
-						<h4 className="hide--sm-down" dangerouslySetInnerHTML={{ __html: base.intro_section_welcome_text}} />
+						<ReactWOW  animation='fadeInUp'><h4 className="hide--sm-down" dangerouslySetInnerHTML={{ __html: base.intro_section_welcome_text}} /></ReactWOW>
 					</div>
 				</div>
 				<div className="home-solutions-intro">
@@ -65,10 +70,10 @@ class Home extends Component {
 					<div className="container">
 						<div className="row row--65">
 							<div className="col col--7 col--sm-12 pull-right" data-stellar-ratio="1.2">
-								<h2 className="" dangerouslySetInnerHTML={{ __html: base.intro_solutions_title}} />
+								<ReactWOW  animation='fadeInLeft'><h2 className="" dangerouslySetInnerHTML={{ __html: base.intro_solutions_title}} /></ReactWOW>
 							</div>
 							<div className="col col--5 col--sm-12 intro_solutions_paragraph">
-								<p className="" dangerouslySetInnerHTML={{ __html: base.intro_solutions_paragraph}} />
+								<ReactWOW  animation='fadeInRight'><p className="" dangerouslySetInnerHTML={{ __html: base.intro_solutions_paragraph}} /></ReactWOW>
 							</div>
 						</div>
 					</div>
@@ -79,10 +84,12 @@ class Home extends Component {
 							<video src={prop.video.url} autoPlay playsInline muted loop></video>
 						</div>
 						<div className="container">
+							<ReactWOW  animation={(prop.image_position == "left") ? ("fadeInRight") : ("fadeInLeft")}>
 							<div className={(prop.image_position == "left") ? ("text Right") : ("text Left")} >
 								<span dangerouslySetInnerHTML={{ __html: prop.text}} />
 									<a href={prop.read_more_url} className="read-more">Read on</a>
 							</div>
+							</ReactWOW>
 						</div>
 					</div>
 				)})}
