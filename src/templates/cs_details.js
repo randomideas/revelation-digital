@@ -12,13 +12,25 @@ class CSD extends Component {
 		var sectionStyle = { 
 		  backgroundImage: `url(${img})`
 		};
-		
+		var seo = this.props.pageContext.Data.Data.seo;
 		return (
 		
 			<Layout>
 				<>
 				<Helmet>
 					<title>{this.props.pageContext.Data.title} . Revelation Digital </title>
+					
+					<meta name="title" content={seo.title}></meta>
+					<meta name="description" content={seo.metadesc}></meta>
+					<meta name="keywords" content={seo.focuskw}></meta>
+					<meta property="og:locale" content="en_US" />
+					<meta property="og:type" content="article"></meta>
+					<meta property="og:title" content={seo.opengraphtitle}></meta>
+					<meta property="og:description" content={seo.opengraphdescription}></meta>
+					<meta property="og:site_name" content="Revelation Digital"></meta>
+					<meta property="twitter:card" content="summary_large_image"></meta>
+					<meta property="twitter:title" content={seo.twittertitle}></meta>
+					<meta property="twitter:description" content={seo.twitterdescription}></meta>
 				</Helmet>
 				<section className="case-study-hero-section" style={ sectionStyle }>
 					<div className="container">

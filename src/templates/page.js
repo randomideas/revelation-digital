@@ -52,6 +52,7 @@ class Page extends Component {
 	
 	render() {
 		var PageCode = this.props.pageContext.Data.slug;
+		var seo = this.props.pageContext.Data.seo;
 		var is_page = 0;
 		if(PageCode === "about"){
 			var base = this.props.pageContext.Data.data.additional_data.About;
@@ -126,16 +127,18 @@ class Page extends Component {
 			<Layout>	
 			<>
 				<Helmet>
-					<title>Page title | Revelation Digital - Eye-Opening Programmatic Media</title>
-					<meta name="title" content=""></meta>
-					<meta name="description" content=""></meta>
-					<meta name="keywords" content=""></meta>
-					<meta property="og:type" content="website"></meta>
-					<meta property="og:title" content=""></meta>
-					<meta property="og:description" content=""></meta>
+					<title>{seo.title}</title>
+					<meta name="title" content={seo.title}></meta>
+					<meta name="description" content={seo.metadesc}></meta>
+					<meta name="keywords" content={seo.focuskw}></meta>
+					<meta property="og:locale" content="en_US" />
+					<meta property="og:type" content="article"></meta>
+					<meta property="og:title" content={seo.opengraphtitle}></meta>
+					<meta property="og:description" content={seo.opengraphdescription}></meta>
+					<meta property="og:site_name" content="Revelation Digital"></meta>
 					<meta property="twitter:card" content="summary_large_image"></meta>
-					<meta property="twitter:title" content=""></meta>
-					<meta property="twitter:description" content=""></meta>
+					<meta property="twitter:title" content={seo.twittertitle}></meta>
+					<meta property="twitter:description" content={seo.twitterdescription}></meta>
 				</Helmet>
 				
 				{/* About Us Page Code */}
