@@ -22,6 +22,7 @@
     "gatsby-source-filesystem": "^3.3.0",
     "gatsby-source-wordpress": "^5.3.0",
     "gatsby-transformer-sharp": "^3.3.0",
+    "global": "^4.4.0",
     "html-react-parser": "^1.1.1",
     "jquery": "^3.6.0",
     "jquery.stellar": "github:markdalgleish/stellar.js",
