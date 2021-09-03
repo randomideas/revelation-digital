@@ -21,9 +21,12 @@ class Footer extends Component {
 		})
     }
 	render() {
-		//let str_url = window.location.pathname;
-		//str_url.replace('/', '');
 		let str_url = "";
+		const isBrowser = () => typeof window !== "undefined"
+		if(isBrowser()){
+			str_url = window.location.pathname;
+			str_url.replace('/', '');
+		}
 		return (
 			
 				<>
