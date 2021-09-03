@@ -27,6 +27,7 @@ class Footer extends Component {
 			str_url = window.location.pathname;
 			str_url.replace('/', '');
 		}
+		
 		return (
 			
 				<>
