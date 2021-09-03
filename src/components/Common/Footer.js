@@ -23,7 +23,7 @@ class Footer extends Component {
 	render() {
 		//let str_url = window.location.pathname;
 		//str_url.replace('/', '');
-		str_url = "";
+		let str_url = "";
 		return (
 			
 				<>
