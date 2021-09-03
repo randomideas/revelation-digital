@@ -229,7 +229,7 @@ class Page extends Component {
 								{base.about_stats.map((propstat,i) => {return (
 									<div className="stat-item">
 										<span className="number text-bebas text-bebas--ultra-big text-bebas--stroke">
-											<span><Counter start={1} end={propstat.number} delay={10} /></span>
+											<span><Counter start={1} end={propstat.number} delay={9} /></span>
 											<span>{propstat.number_postfix}</span>
 										</span>
 										 <span className="label text-bebas text-bebas--big text-bebas--white">{propstat.text}</span>
