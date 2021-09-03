@@ -25,8 +25,8 @@ class Header extends Component {
     }
 	
 	render() {
-		let str_url = window.location.pathname;
-		str_url.replace('/', '');
+		//let str_url = window.location.pathname;
+		//str_url.replace('/', '');
 		str_url = "";
 		return (
 			
