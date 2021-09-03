@@ -13603,10 +13603,5 @@ h3 {
     page-break-after: avoid;
   }
 }
-@media only screen and (max-width: 600px) {
-  .slick-dots{
-	margin-top: -9% !important;
-}
-}
 
 
