@@ -25,14 +25,13 @@ class Header extends Component {
     }
 	
 	render() {
+		let str_url = "";
 		const isBrowser = () => typeof window !== "undefined"
 		if(isBrowser()){
-			let str_url = window.location.pathname;
+			str_url = window.location.pathname;
 			str_url.replace('/', '');
 		}
-		else{
-			let str_url = "";
-		}
+		
 
 		return (
 			
