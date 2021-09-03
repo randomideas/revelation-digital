@@ -21,7 +21,8 @@ class Footer extends Component {
 		})
     }
 	render() {
-		
+		let str_url = window.location.pathname;
+		str_url.replace('/', '');
 		return (
 			
 				<>
@@ -33,8 +34,8 @@ class Footer extends Component {
 								<ul className="menu-lg">
 									{(this.state.showInfo === 1) ? (
 										<>
-										{this.state.pagedata.Second.map((prop,i) => {return (
-											<li key={"Menu"+i} >
+										{this.state.pagedata.Primary.map((prop,i) => {return (
+											<li key={"Menu"+i} className={("/"+prop.Slug === str_url) ? ("current-menu-item") : ("")} >
 										<a  href={"/"+prop.Slug} >{prop.Name}</a>
 											</li>
 										)})}
@@ -62,7 +63,7 @@ class Footer extends Component {
 							{(this.state.showInfo === 1) ? (
 								<>
 								{this.state.pagedata.Primary.map((prop,i) => {return (
-									<li key={"Menu"+i} >
+									<li key={"Menu"+i} className={("/"+prop.Slug === str_url) ? ("current-menu-item") : ("")} >
 								<a  href={"/"+prop.Slug} >{prop.Name}</a>
 									</li>
 								)})}

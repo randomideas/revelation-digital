@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ReactWOW from 'react-wow'
+import LazyLoad from 'react-lazyload';
 import Layout from "../components/layout"
 import Nav from "../components/Common/Nav"
 import Testimonials from "../components/Common/Testimonials"
@@ -223,11 +224,12 @@ class Page extends Component {
 									<h2 className="text-bebas text-bebas--big text-bebas--white" dangerouslySetInnerHTML={{ __html: base.about_stats_heading}} />
 								</div>
 							</div>
+							 <LazyLoad height={200}>
 							<div className="stat-items-wrapper">
 								{base.about_stats.map((propstat,i) => {return (
 									<div className="stat-item">
 										<span className="number text-bebas text-bebas--ultra-big text-bebas--stroke">
-											<span><Counter start={1} end={propstat.number} delay={200} /></span>
+											<span><Counter start={1} end={propstat.number} delay={10} /></span>
 											<span>{propstat.number_postfix}</span>
 										</span>
 										 <span className="label text-bebas text-bebas--big text-bebas--white">{propstat.text}</span>
@@ -235,6 +237,7 @@ class Page extends Component {
 									</div>
 								)})}
 							</div>
+							</LazyLoad>
 						</section>
 						<section className="section-find-more">
 							<div className="container">
