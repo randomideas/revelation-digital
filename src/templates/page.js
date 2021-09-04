@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link} from 'gatsby'
 import ReactWOW from 'react-wow'
 import LazyLoad from 'react-lazyload';
 import Layout from "../components/layout"
@@ -15,6 +16,7 @@ import smoke2 from "../images/hero/smoke2.png"
 import detective from "../images/hero/detective.png"
 import flare from "../images/hero/flare.png"
 import smoke3 from "../images/hero/smoke3.png"
+import ContactLogo from "../images/logo.svg"
 import Torus from "../images/Torus_2.mp4"
 import Float from "../images/Float_2.mp4"
 import Pump from "../images/Pump_2.mp4"
@@ -28,6 +30,8 @@ class Page extends Component {
 	constructor(props) {
 		super(props);
         this.clickHandler = this.clickHandler.bind(this);
+        this.clickPopup = this.clickPopup.bind(this);
+        this.clickPopupClose = this.clickPopupClose.bind(this);
 	}
 	
 	componentDidMount() {
@@ -37,6 +41,12 @@ class Page extends Component {
 		}
 	}
 	
+	clickPopupClose(param){
+		document.getElementById("contact-popup-"+param).classList.remove("active"); 
+	}
+	clickPopup(param){
+		document.getElementById("contact-popup-"+param).classList.add("active"); 
+	}
 	clickHandler(param){
 	
 		var items = document.getElementsByClassName("contact-card-body");
@@ -224,20 +234,22 @@ class Page extends Component {
 									<h2 className="text-bebas text-bebas--big text-bebas--white" dangerouslySetInnerHTML={{ __html: base.about_stats_heading}} />
 								</div>
 							</div>
-							 <LazyLoad height={200}>
+							 
 							<div className="stat-items-wrapper">
 								{base.about_stats.map((propstat,i) => {return (
+									<LazyLoad height={200}  >
 									<div className="stat-item">
 										<span className="number text-bebas text-bebas--ultra-big text-bebas--stroke">
-											<span><Counter start={1} end={propstat.number} delay={9} /></span>
+											<span><Counter start={1} end={propstat.number} delay={8} /></span>
 											<span>{propstat.number_postfix}</span>
 										</span>
 										 <span className="label text-bebas text-bebas--big text-bebas--white">{propstat.text}</span>
 											 {(base.about_stats.length === i) ? (<a href={base.about_deeper_link} className="text--pink dig-link">{base.about_deeper_link_text}</a>) : ("")}
 									</div>
+									</LazyLoad>
 								)})}
 							</div>
-							</LazyLoad>
+							
 						</section>
 						<section className="section-find-more">
 							<div className="container">
@@ -380,7 +392,7 @@ class Page extends Component {
 								  <ReactWOW  animation='fadeInUp'>
 								  <ul className=" ">
 									{base.forms.map((propforms,i) => {return (
-									<li><a href="#" className= "jsPopupToggle" data-popup={"#contact-popup-"+(i+1)}>{propforms.title}</a></li>
+									<li><a href="#" className= "jsPopupToggle" onClick={() => this.clickPopup(i+1)} data-popup={"#contact-popup-"+(i+1)}>{propforms.title}</a></li>
 									)})}
 								  </ul>
 								  </ReactWOW>
@@ -448,6 +460,26 @@ class Page extends Component {
 								)}
 							</div>
 						</section>
+						{base.forms.map((propforms,i) => {return (	
+							<div className="contact-popup-wrapper" id={"contact-popup-"+(i+1)}>
+								<button className="close-popup jsPopupToggle" onClick={() => this.clickPopupClose(i+1)} data-popup={"#contact-popup-"+(i+1)}>
+									<svg xmlns="http://www.w3.org/2000/svg" width="20.41" height="19.895" viewBox="0 0 20.41 19.895">
+										<g id="Group" transform="translate(10.253 -6.718) rotate(45)">
+											<path id="Line_2" data-name="Line 2" d="M.5,0V24" transform="translate(11 0)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+											<path id="Line_2_Copy" data-name="Line 2 Copy" d="M0,.636H24" transform="translate(0 11)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+										</g>
+									</svg>
+								</button>
+								<div className="popup-container">
+									<Link to={"/"} className="logo"><img src={ContactLogo} alt="Revelation Digital"/></Link>
+									<h3 className="text-bebas text-bebas--big text-bebas--stroke leave-details-text">{propforms.title}</h3>
+									 <iframe height="650" width="100%" frameBorder="0" src={"https://revelation.digital/gravity-page/?gid="+propforms.form} title="description" /> 
+									
+								</div>		
+							</div>		
+						)})}
+						
+						
 					</>
 					) : ("")} 
 				</>
