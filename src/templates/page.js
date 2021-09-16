@@ -89,7 +89,7 @@ class Page extends Component {
 			var base = this.props.pageContext.Data.data;
 			is_page = 1;
 		}
-		if(PageCode === "home"){
+		if(PageCode === "campaign-scene-investigators"){
 			var base = this.props.pageContext.Data.data.additional_data.Home;
 			is_page = 1;
 		}
@@ -505,7 +505,7 @@ class Page extends Component {
 				</>
 				
 				{/* Home Page Code */}
-				<> {(PageCode === "home") ? (
+				<> {(PageCode === "campaign-scene-investigators") ? (
 						<>
 							<div className="hero-home">
 								<div className="hero_parallax" id="scene">

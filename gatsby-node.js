@@ -19,7 +19,7 @@ exports.createPages = async ({ actions, graphql }) => {
 	await Promise.all(Data.data.ResponseData.Pages.map(async (value) => {
     console.log(value.slug);
 	var page = require.resolve(`./src/templates/page.js`);
-		if(value.slug == "home"){
+		if(value.title == "Home"){
 			var pathurl = '/';
 		}
 		else{

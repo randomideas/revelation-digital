@@ -51,6 +51,12 @@ module.exports = {
         }
     },
 	{
+      resolve: "gatsby-plugin-segment-analytics",
+      options: {
+        writeKey: "cHygqw1AD6q8BEM5igsq7LsKRunDOFuY",
+      },
+    },
+	{
     resolve: `gatsby-plugin-nprogress`,
     options: {
       // Setting a color is optional.
