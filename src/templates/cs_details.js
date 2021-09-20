@@ -3,8 +3,61 @@ import ReactWOW from 'react-wow'
 import Layout from "../components/layout"
 import { Helmet } from "react-helmet"
 import GetTouch from "../components/Common/GetTouch"
+import { Link} from 'gatsby'
+import Slider from "react-slick";
 
 class CSD extends Component {
+	
+	constructor(props) {
+    super(props);
+   
+  }
+	
+	getYTEmbedURL(url, controls = true) {
+
+	  var shortUrlRegex   = '/youtu.be\/([a-zA-Z0-9_-]+)\??/i';
+	  var longUrlRegex    = '/youtube.com\/((?:embed)|(?:watch))((?:\?v\=)|(?:\/))([a-zA-Z0-9_-]+)/i';
+	  var controls_str    = controls ? '?controls=1' : '';
+		
+		if(url.match(longUrlRegex)){
+			var matches = url.match(longUrlRegex);
+			return 'https://www.youtube.com/embed/' + matches[matches.length - 1] + controls_str;
+		}
+		if(url.match(shortUrlRegex)){
+			var matches = url.match(shortUrlRegex);
+			return 'https://www.youtube.com/embed/' + matches[matches.length - 1] + controls_str;
+		}
+		return false;
+	}
+
+	getVimeoEmbedURL(url) {
+		if(url.match('/https:\/\/vimeo.com\/(\\d+)/')){
+			var matches = url.match('/https:\/\/vimeo.com\/(\\d+)/');
+			return 'http://player.vimeo.com/video/' + matches[1];
+		}
+		return false;
+	}
+
+	getYTiframe(embedURL) {
+		return '<iframe width="560" height="315" src="' + embedURL + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>';
+	}
+
+	getVimeoiframe(embedURL) {
+		return '<iframe width="560" height="315" src="' + embedURL + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>';
+	}
+
+	getHTML5Video(url) {
+		return '<video controls><source src="' + url + '"></source></video>';
+	}
+
+	 getVideoHTML(url) {
+	  if ( this.getYTEmbedURL(url) )
+		return this.getYTiframe(this.getYTEmbedURL(url));
+	  if ( this.getVimeoEmbedURL(url) )
+		return this.getVimeoiframe(this.getVimeoEmbedURL(url));
+	  return this.getHTML5Video(url);
+	}
+	
 	
 	render() {
 		
@@ -13,6 +66,13 @@ class CSD extends Component {
 		  backgroundImage: `url(${img})`
 		};
 		var seo = this.props.pageContext.Data.Data.seo;
+		var settings = {
+			dots: true,
+			infinite: true,
+			speed: 500,
+			slidesToShow: 1,
+			slidesToScroll: 1
+		  };
 		return (
 		
 			<Layout>
@@ -42,9 +102,311 @@ class CSD extends Component {
 				</section>
 				<div className="case-study-intro-section case-study-intro-section--no-diagonal case-study-intro-section--cs-intro">
 					<div className="line-vertical-center-wrapper line-vertical-center-wrapper--top is_cs-intro">
-						<div className="line-vertical-center"></div>
+						<div className="line-vertical-center is_active"></div>
 					</div>
 				</div>
+				<>
+				{this.props.pageContext.Data.Data.sections.map((section) =>
+					<>
+					
+					<>
+					{(section.acf_fc_layout === "simple_text") ? (
+						<>
+						<section className="cs_simple-text-section section--normal-margin no-mt">
+						  <div className="container">
+							<ReactWOW animation='fadeInUp'>
+							<div className="cs_simple-text" dangerouslySetInnerHTML={{ __html: section.text}} >
+							</div>
+							</ReactWOW>
+						  </div>
+						</section>
+						</>
+					) : ("")}
+					</>
+					
+					<>
+					{(section.acf_fc_layout === "products_used") ? (
+						<>
+							<section className="cs_products-used-section section--normal-margin">
+								<div className="cs_products-used">
+									<div className="cs_products-used__title">
+									  <h2>{section.cs_title}</h2>
+									</div>
+									<div className="cs_products-used-list">
+									{section.checkboxes.map((checkboxd) =>
+										<>
+										<Link href={checkboxd.link.url} className={(checkboxd.checked === true) ? ("cs_products-used-list__item cs_products-used-list__item--active") : ("cs_products-used-list__item")} >{checkboxd.link.title}.</Link>
+										</>
+									)}
+									</div>
+								</div>
+							</section>
+						</>
+					) : ("")}
+					</>
+					
+					<>
+					{(section.acf_fc_layout === "results") ? (
+						<>
+							<section className="cs_results-section section--normal-margin">
+								<div className="container">
+									<div className="cs_results-title">
+										<h2>{section.title}</h2>
+									</div>
+									{section.list.map((lists) =>
+										<div className={(lists.reversed_alignment) ? ("cs_results-row cs_results-row--reversed") : ("cs_results-row")}>
+											<div className="cs_results-row__col cs_results-row__col--graph">
+											{(lists.graph.indexOf("domo.com")) ? (
+												<div className="cs_results-row-graph domo">
+													<iframe src={lists.graph}></iframe>
+												</div>
+												) : (
+												<div className="cs_results-row-graph">
+													<img src={lists.graph} alt="" />
+												</div>
+												)}
+											</div>
+											<div className="cs_results-row__col cs_results-row__col--text">
+											<ReactWOW  animation={(lists.reversed_alignment) ? ("fadeInLeft") : ("fadeInRight")}>	
+											  <div className={(lists.reversed_alignment) ? ("cs_results-row-text") : ("cs_results-row-text")}>
+												<h3>{lists.text}</h3>
+												<p>{lists.subtext}</p>
+											  </div>
+											  </ReactWOW>
+											</div>
+										</div>
+									)}
+								</div>
+							</section>
+						</>
+					) : ("")}
+					</>
+					
+					<>
+					{(section.acf_fc_layout === "revelations") ? (
+						<>
+						<section className="cs_revelations-section section--normal-margin">
+							<div className="cs_revelations-artwork" data-stellar-ratio="1.1" style={{backgroundImage: "url("+section.image.url+")"}} ></div>
+							<div className="container">
+								<div className="cs_results-title cs_results-title--revelations">
+									<h2>{section.title}</h2>
+								</div>
+								<div className="cs_revelations-list">
+									{section.list.map((lists,i) =>
+										<>
+											<div className="cs_revelations-list-item">
+												<ReactWOW animation='fadeIn'>
+												<div className="cs_revelations-list-item__index">
+												{(i+1)}
+												</div>
+												</ReactWOW>
+												<ReactWOW animation='fadeInRight'>
+												<div className="cs_revelations-list-item__text" dangerouslySetInnerHTML={{ __html: lists.text}} />
+												
+												
+												</ReactWOW>
+											</div>
+										</>
+									)}
+								</div>
+							</div>
+						</section>
+						</>
+					) : ("")}
+					</>
+					<>
+					{(section.acf_fc_layout === "work") ? (
+						<>
+							<section className="cs_work-section section--normal-margin">
+								<div className="container">
+									<div className="cs_results-title cs_results-title--work">
+										<h2>{section.title}</h2>
+									</div>
+									{section.subsections.map((subsection,i) =>
+										<>
+										<>
+										{(subsection.type === 'text') ? (
+											<div className="cs_work-subsection">
+											  <div className="container">
+												<ReactWOW animation='fadeInUp'>
+												<div className="cs_simple-text cs_simple-text--work" dangerouslySetInnerHTML={{ __html: subsection.text}} />
+												</ReactWOW>  
+												
+											  </div>
+											</div>
+										) : ("")}
+										</>
+										<>
+										{(subsection.type === 'slider') ? (
+											 <div className="cs_work-subsection">
+											  <div className="cs_work-slider-wrapper jsCSWorkSliderWrapper">
+												<div className="cs_work-slider jsCSWorkSlider">
+												<Slider {...settings}>
+												{subsection.slides.map((slide,i) =>	
+													<div className="cs_work-slide">
+														<img src={slide.image.url} alt={slide.image.alt} />
+													</div>
+												)}	
+												</Slider>
+												</div>
+											  </div>
+											</div>
+										) : ("")}
+										</>
+										<>
+										{(subsection.type === 'icons') ? (
+											<div className="cs_work-subsection--icons">
+												<div className="container">
+													<div className="features-table features-table--3">
+														{subsection.icons.map((icon,k) =>	
+															<ReactWOW animation='zoomIn' delay={'0.'+(k*2)+'s'} >
+																<div className="item" >
+																	<img src={icon.icon.url} alt={icon.icon.alt} />
+																	<h4>{icon.label}</h4>
+																</div>
+															</ReactWOW>  
+														)}
+													</div>
+												</div>
+											</div>
+										) : ("")}
+										</>
+										<>
+										{(subsection.type === 'image') ? (
+											 <div className="cs_work-subsection">
+											  <div className="container">
+												<div className="cs_work-fullwidth-image">
+												  <img src={subsection.image.url} alt={subsection.image.alt} />
+												</div>
+											  </div>
+											</div>
+										) : ("")}
+										</>
+										<>
+										{(subsection.type === 'video') ? (
+											 <div className="cs_work-subsection">
+											  <div className="container">
+												<div className="cs_work-fullwidth-video">
+												{ this.getVideoHTML(subsection.video)}; ?>
+												</div>
+											  </div>
+											</div>
+										) : ("")}
+										</>
+										</>
+									)}
+								</div>
+							</section>
+						</>
+					) : ("")}
+					</>
+					
+					<>
+					{(section.acf_fc_layout === "quote") ? (
+						<>
+							<section className="case-study-client-quote">
+							  <div className="container">
+								<span className="quote-icon">
+								  <svg xmlns="http://www.w3.org/2000/svg" width="229" height="187" viewBox="0 0 229 187">
+									<path id="_" data-name="“" d="M227,185H131.516V99.685L174.754,0H215.29L189.167,89.806H227V185ZM95.484,185H0V99.685L43.238,0H83.774L57.65,89.806H95.484V185Z" transform="translate(1 1)" fill="none" stroke="#b019d4" stroke-miterlimit="10" stroke-width="2"/>
+								  </svg>
+								</span>
+								<ReactWOW  animation='fadeInUp'>
+								<div className="quote">
+								  <p className="quote-title text-bebas text-bebas--big text-bebas--stroke">{section.title}</p>
+								  <blockquote className="content-area">
+									<span dangerouslySetInnerHTML={{ __html: section.text}} ></span>
+									<cite>{section.cite}</cite>
+								  </blockquote>
+								</div>
+								</ReactWOW>
+							  </div>
+							</section>
+						</>
+					) : ("")}
+					</>
+					
+					<>
+					{(section.acf_fc_layout === "epilogue") ? (
+						<>
+							<section class="cs_epilogue-section">
+						  <div class="cs_epilogue-artwork"></div>
+						  <div class="container">
+						  <ReactWOW  animation='fadeInUp'>
+							<div class="cs_epilogue-content" dangerouslySetInnerHTML={{ __html: section.text}} />
+							</ReactWOW> 
+							
+						  </div>
+						</section>
+						</>
+					) : ("")}
+					</>
+					
+					<>
+					{(section.acf_fc_layout === "epilogue") ? (
+						<>
+							<section className="cs_epilogue-section">
+						  <div className="cs_epilogue-artwork"></div>
+						  <div className="container">
+						  <ReactWOW  animation='fadeInUp'>
+							<div className="cs_epilogue-content" dangerouslySetInnerHTML={{ __html: section.text}} />
+							</ReactWOW> 
+							
+						  </div>
+						</section>
+						</>
+					) : ("")}
+					</>
+					
+					<>
+					{(section.acf_fc_layout === "journey") ? (
+						<>
+						<section className="cs_journey-section section--normal-margin">
+							<div className="container">
+								<div className="cs_results-title cs_results-title--journey">
+								  <h2>{section.title}</h2>
+								</div>
+								{section.subsections.map((subsection,i) =>
+										<>
+											 <div className="cs_journey-subsection">
+									  <div className="cs_journey-top">
+										<div className="line-vertical-center-wrapper line-vertical-center-wrapper--top is_cs-internal">
+										  <div className="line-vertical-center"></div>
+										</div>
+									  </div>
+									  <ReactWOW  animation='fadeInUp'>
+									  <div className="cs_journey-subtitle">
+										<h3>{subsection.title}</h3>
+									  </div>
+									  </ReactWOW> 
+									  <div className="cs_journey-subsection-row">
+										<div className="cs_journey-subsection-row__col">
+										 <ReactWOW  animation='fadeInLeft'>
+										  <div className="cs_journey-subsection-content" dangerouslySetInnerHTML={{ __html: subsection.left_column_text}}  />
+											</ReactWOW> 
+										</div>
+										<div className="cs_journey-subsection-row__col">
+										 <ReactWOW  animation='fadeInRight'>
+										  <div className="cs_journey-subsection-content" dangerouslySetInnerHTML={{ __html: subsection.right_column_text}} />
+											</ReactWOW> 
+										</div>
+									  </div>
+									</div>
+										</>
+								)}
+								
+								
+							</div>
+						</section>
+						</>
+					) : ("")}
+					</>
+					
+					
+					</>
+				)}
+				</>
+				
 				{this.props.pageContext.Data.Data.more_links.map((links) => 
 					<div className="section-find-more">
 						<div className="container">
