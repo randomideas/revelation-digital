@@ -5,7 +5,7 @@ const axios = require('axios');
 
 const getData = async () => {
   var a =  axios({
-		url: 'http://development.revelation.digital/wp-json/newrd/v1/rd_pages',
+		url: 'https://development.revelation.digital/wp-json/newrd/v1/rd_pages',
 		method: 'get',
 	});
 	console.log(a);

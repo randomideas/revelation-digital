@@ -53,7 +53,7 @@ module.exports = {
 	{
       resolve: "gatsby-plugin-segment-analytics",
       options: {
-        writeKey: "cHygqw1AD6q8BEM5igsq7LsKRunDOFuY",
+        writeKey: "ifuUfHDtL2QIjMJRaNBN8Bojcqg1ACUK",
       },
     },
 	{
@@ -67,7 +67,7 @@ module.exports = {
   },
     // See https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet/?=gatsby-plugin-react-helmet
     `gatsby-plugin-react-helmet`,
-	/*{
+	{
     resolve: "gatsby-plugin-google-tagmanager",
     options: {
       id: "GTM-P873QJ",
@@ -81,7 +81,7 @@ module.exports = {
       // Defaults to null
       defaultDataLayer: { platform: "gatsby" },
     },
-  },*/
+  },
     /**
      * this (optional) plugin enables Progressive Web App + Offline functionality
      * To learn more, visit: https://gatsby.dev/offline
