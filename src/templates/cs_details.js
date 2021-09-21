@@ -5,6 +5,8 @@ import { Helmet } from "react-helmet"
 import GetTouch from "../components/Common/GetTouch"
 import { Link} from 'gatsby'
 import Slider from "react-slick";
+import LazyLoad from 'react-lazyload';
+import Counter from 'react-number-counter'
 
 class CSD extends Component {
 	
@@ -105,6 +107,7 @@ class CSD extends Component {
 						<div className="line-vertical-center is_active"></div>
 					</div>
 				</div>
+				{(this.props.pageContext.Data.Data.sections !== false) ? (
 				<>
 				{this.props.pageContext.Data.Data.sections.map((section) =>
 					<>
@@ -402,10 +405,87 @@ class CSD extends Component {
 					) : ("")}
 					</>
 					
+					<>
+					{(section.acf_fc_layout === "divided_text") ? (
+						<>
+							<div className="section-divided-text section-divided-text--case-study">
+								<div className="container">
+									{section.groups.map((group,i) =>
+									<>
+										<div className="divided-text-group">
+											 <ReactWOW  animation='fadeInRight'>
+											<h2 className="divided-text-title text-bebas text-bebas--big text-bebas--stroke">{group.title}</h2>
+											</ReactWOW> 
+											{group.columns.map((column,k) =>
+											<>
+												<div className="divided-text-wrapper">
+												<div className="row">
+												  <div className="col col--5 col--sm-12">
+													<ReactWOW  animation='fadeInUp'>
+													<h3 className="text-bebas text-bebas--big text--pink">{column.title}</h3>
+													</ReactWOW> 
+												  </div>
+												  <div className="col col--6 col--sm-12">
+													<ReactWOW  animation='fadeInUp' delay={'0.3s'} >
+													<div className="content-area">
+													  <span dangerouslySetInnerHTML={{ __html: column.text}} ></span>
+													  {(column.button) ? (
+														<a href={column.button.url} className="case-study-link">{column.button.title}</a>
+													  ) : ("")}
+													</div>
+													</ReactWOW> 
+												  </div>
+												</div>
+											  </div>
+											</>
+											)}
+										</div>	
+									</>
+									)}
+								</div>
+							</div>
+						</>
+					) : ("")}
+					</>
+					
+					<>
+					{(section.acf_fc_layout === "stats") ? (
+						<>
+							<section className="case-study-stat-section">
+							  <div className="container">
+							  <ReactWOW  animation='fadeInLeft'>
+								<div className="case-study-stat-section-title">
+								  <h2 className="text-bebas text-bebas--big text-bebas--white text-bebas--no-letter-spacing">{section.title}</h2> 
+								</div>
+								</ReactWOW> 
+							  </div>
+							  <div className="stat-items-wrapper stat-items-wrapper--case-study jsStatsWrapper">
+								{section.stats.map((stat,i) =>
+									<>
+										<LazyLoad height={200}  >
+										<div className={(stat.large) ? ("stat-item stat-item--style-2") : ("stat-item stat-item--style-1")} >
+											<span className="number text-bebas text-bebas--ultra-big text-bebas--stroke">
+												<span>{stat.stat_prefix}</span>
+												<span><Counter start={1} end={stat.stat} delay={8} /></span>
+												<span>{stat.number_postfix}</span>
+											</span>
+											<ReactWOW  animation='fadeInUp'>
+											<span className="label">{stat.text}</span>
+											</ReactWOW> 	 
+										</div>
+										</LazyLoad>
+									</>
+								)}	
+							  </div>
+							  </section>
+						</>
+					) : ("")}
+					</>
+					
 					
 					</>
 				)}
-				</>
+				</> ) : ("")}
 				
 				{this.props.pageContext.Data.Data.more_links.map((links) => 
 					<div className="section-find-more">

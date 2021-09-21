@@ -155,10 +155,29 @@ class Page extends Component {
 				{/* About Us Page Code */}
 				<> {(PageCode === "about") ? (
 						<>
+						
+						<section className="about-top-intro">
+							
+							<div className="row row--00">
+								<div className="col col--6 col--sm-12">
+									<div className="smoke-wrapper"></div>
+									<div className="pink-wrapper-text"></div>
+									<ReactWOW  animation='fadeInUp'>
+									<h2 className="  text-bebas text-bebas--ultra-big text-bebas--stroke text-bebas--stroke-white" dangerouslySetInnerHTML={{ __html: base.about_intro_outline_text}} />
+									</ReactWOW>
+								</div>
+								<div className="col col--6 col--sm-12" data-stellar-ratio="1.3">
+									<img src={base.about_intro_image.url} className="about-top-intro-image"  width="1234" height="787" />
+								</div>
+							</div>
+						</section>
 						<section className="about-top-section">
 							<div className="container">
+							 <div className="line-vertical-center-wrapper line-vertical-center-wrapper--top">
+      <div className="line-vertical-center is_active"></div>
+    </div>
 								<div className="row row--00">
-									<div className="col col--6 col--sm-12">
+									<div className="col col--6 col--sm-12 new-col-sm">
 										<ReactWOW delay='0.4s' animation='fadeInLeft'>
 										<div className="top-section-text" data-wow-delay="0.4s">
 											<h1 className="text-bebas text-bebas--big text-bebas--white text-bebas--no-letter-spacing" dangerouslySetInnerHTML={{ __html: base.about_intro_heading}} />
@@ -175,23 +194,7 @@ class Page extends Component {
 								</div>
 							</div>
 						</section>
-						<section className="about-top-intro">
-							<div className="line-vertical-center-wrapper line-vertical-center-wrapper--top">
-								<div className="line-vertical-center is_active"></div>
-							</div>
-							<div className="row row--00">
-								<div className="col col--6 col--sm-12">
-									<div className="smoke-wrapper"></div>
-									<div className="pink-wrapper-text"></div>
-									<ReactWOW  animation='fadeInUp'>
-									<h2 className="  text-bebas text-bebas--ultra-big text-bebas--stroke text-bebas--stroke-white" dangerouslySetInnerHTML={{ __html: base.about_intro_outline_text}} />
-									</ReactWOW>
-								</div>
-								<div className="col col--6 col--sm-12" data-stellar-ratio="1.3">
-									<img src={base.about_intro_image.url} className="about-top-intro-image"  width="1234" height="787" />
-								</div>
-							</div>
-						</section>
+						
 						<div className="section-divided-text">
 							<div className="container">
 								{base.about_text.map((prop,i) => {return (
