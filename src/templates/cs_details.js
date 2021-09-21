@@ -159,7 +159,7 @@ class CSD extends Component {
 									{section.list.map((lists) =>
 										<div className={(lists.reversed_alignment) ? ("cs_results-row cs_results-row--reversed") : ("cs_results-row")}>
 											<div className="cs_results-row__col cs_results-row__col--graph">
-											{(lists.graph.indexOf("domo.com")) ? (
+											{(lists.graph.indexOf("domo.com") > -1) ? (
 												<div className="cs_results-row-graph domo">
 													<iframe src={lists.graph}></iframe>
 												</div>
