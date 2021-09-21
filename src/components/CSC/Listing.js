@@ -19,6 +19,12 @@ class Listing extends Component {
 	hoverHandler(param){
 		document.getElementById("jsClientStickyImage").style.backgroundImage = "url('"+param+"')"; 
 	}
+	
+	addActiveClass() {
+  
+}
+	
+	
 	componentDidMount() {
 		
 		var url = "https://revelation.digital/wp-json/newrd/v1/rd_cs";
@@ -36,7 +42,7 @@ class Listing extends Component {
 					<>
 					<ul className="clients-menu jsClientStoriesMenu">
 						{this.state.pagedata.map((prop,i) => {return (
-							<li><a onMouseOver={() => this.hoverHandler(prop.img)} href={"/case-studies/"+prop.slug} data-image={prop.img} className="text-bebas text-bebas--big text-bebas--stroke">{prop.title}</a></li>
+						<li><a onMouseOver={() => this.hoverHandler(prop.img,i)} id={"id_"+i} href={"/case-studies/"+prop.slug} data-image={prop.img} className={(i === 0) ? ("text-bebas text-bebas--big text-bebas--stroke active") : ("text-bebas text-bebas--big text-bebas--stroke")}>{prop.title}</a></li>
 						)})}
 					</ul>
 					<div className="client-image-helper">

@@ -80,6 +80,10 @@ class Page extends Component {
 		if(PageCode === "case-studies"){
 			var base = this.props.pageContext.Data.data.additional_data.CSC;
 			is_page = 1;
+			var img = base.image.url;
+			var sectionStyle = { 
+			  backgroundImage: `url(${img})`
+			};
 		}
 		if(PageCode === "contact"){
 			var base = this.props.pageContext.Data.data.additional_data.Contact;
