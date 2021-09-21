@@ -16,8 +16,19 @@ class Listing extends Component {
 		show: false
 		
     };
-	hoverHandler(param){
+	hoverHandler(param,i){
 		document.getElementById("jsClientStickyImage").style.backgroundImage = "url('"+param+"')"; 
+		
+		var buttons = document.getElementsByClassName("text-bebas--stroke");
+		[].forEach.call(buttons, function(el) {
+			el.classList.remove("active");
+		});
+		
+		var element = document.getElementById("id_"+i);
+		element.classList.add("active");
+		
+		
+		
 	}
 	
 	addActiveClass() {
