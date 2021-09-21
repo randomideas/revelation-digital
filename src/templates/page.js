@@ -639,6 +639,30 @@ class Page extends Component {
 								) : ("")}
 								</>
 								<>
+								{(prop.acf_fc_layout === "text_video") ? (
+									
+									
+									<div className={(prop.reversed) ? ("text-image text-image--alt text-video") : ("text-image text-video")} >
+									  <div className="container">
+										<div className="text-video-video">
+										  <iframe width="560" height="315" src={prop.video_url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										</div>
+										<ReactWOW animation='fadeInUp'>
+										<div className="text"> 
+										  <span dangerouslySetInnerHTML={{ __html: prop.text }} ></span>
+											  {(prop.read_more_button) ? (
+												<a href={prop.read_more_button.url} className="read-more solution-read-more" data-fancybox>{prop.read_more_button.title}</a>
+											  ) : ("")}
+										  
+										</div>
+										</ReactWOW>
+									  </div>
+									</div>
+									
+									
+								) : ("")}
+								</>
+								<>
 								{(prop.acf_fc_layout === "simple_text") ? (
 									<div className="section--normal-margin">
 										<div className="container">
@@ -771,6 +795,30 @@ class Page extends Component {
 											</ReactWOW>
 										</div>
 									</div>
+								) : ("")}
+								</>
+								<>
+								{(prop.acf_fc_layout === "text_video") ? (
+									
+									
+									<div className={(prop.reversed) ? ("text-image text-image--alt text-video") : ("text-image text-video")} >
+									  <div className="container">
+										<div className="text-video-video">
+										  <iframe width="560" height="315" src={prop.video_url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										</div>
+										<ReactWOW animation='fadeInUp'>
+										<div className="text"> 
+										  <span dangerouslySetInnerHTML={{ __html: prop.text }} ></span>
+											  {(prop.read_more_button) ? (
+												<a href={prop.read_more_button.url} className="read-more solution-read-more" data-fancybox>{prop.read_more_button.title}</a>
+											  ) : ("")}
+										  
+										</div>
+										</ReactWOW>
+									  </div>
+									</div>
+									
+									
 								) : ("")}
 								</>
 								<>
@@ -910,6 +958,30 @@ class Page extends Component {
 									) : ("")}
 									</>
 									<>
+								{(prop.acf_fc_layout === "text_video") ? (
+									
+									
+									<div className={(prop.reversed) ? ("text-image text-image--alt text-video") : ("text-image text-video")} >
+									  <div className="container">
+										<div className="text-video-video">
+										  <iframe width="560" height="315" src={prop.video_url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										</div>
+										<ReactWOW animation='fadeInUp'>
+										<div className="text"> 
+										  <span dangerouslySetInnerHTML={{ __html: prop.text }} ></span>
+											  {(prop.read_more_button) ? (
+												<a href={prop.read_more_button.url} className="read-more solution-read-more" data-fancybox>{prop.read_more_button.title}</a>
+											  ) : ("")}
+										  
+										</div>
+										</ReactWOW>
+									  </div>
+									</div>
+									
+									
+								) : ("")}
+								</>
+									<>
 									{(prop.acf_fc_layout === "simple_text") ? (
 										<div className="section--normal-margin">
 											<div className="container">
@@ -1046,7 +1118,30 @@ class Page extends Component {
 										</div>
 									) : ("")}
 									</>
+									<>
+								{(prop.acf_fc_layout === "text_video") ? (
 									
+									
+									<div className={(prop.reversed) ? ("text-image text-image--alt text-video") : ("text-image text-video")} >
+									  <div className="container">
+										<div className="text-video-video">
+										  <iframe width="560" height="315" src={prop.video_url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										</div>
+										<ReactWOW animation='fadeInUp'>
+										<div className="text"> 
+										  <span dangerouslySetInnerHTML={{ __html: prop.text }} ></span>
+											  {(prop.read_more_button) ? (
+												<a href={prop.read_more_button.url} className="read-more solution-read-more" data-fancybox>{prop.read_more_button.title}</a>
+											  ) : ("")}
+										  
+										</div>
+										</ReactWOW>
+									  </div>
+									</div>
+									
+									
+								) : ("")}
+								</>
 									<>
 									{(prop.acf_fc_layout === "simple_text") ? (
 										<div className="section--normal-margin">
