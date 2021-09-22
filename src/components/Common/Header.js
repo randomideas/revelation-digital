@@ -15,7 +15,7 @@ class Header extends Component {
 	
 	componentDidMount() {
 		
-		var url = "https://revelation.digital/wp-json/newrd/v1/rd_menu";
+		var url = "https://development.revelation.digital/wp-json/newrd/v1/rd_menu";
 		axios.get(url).then(e => {
 			this.setState({pagedata: e.data.ResponseData})
 			this.setState({showInfo: 1})
@@ -40,7 +40,7 @@ class Header extends Component {
 					<a href="#" className="header-toggle" onClick={()=>{this.setState({show:!this.state.show})}} >menu toggle</a>
 					<div className="header-content">
 						<Link to="/" className="logo">
-							<img src="https://revelation.digital/wp-content/uploads/2020/02/logo.svg" alt="Revelation Digital"/>
+							<img src="https://development.revelation.digital/wp-content/uploads/2020/02/logo.svg" alt="Revelation Digital"/>
 						</Link>
 					</div>
 				</header>

@@ -12,7 +12,7 @@ class SocialMenuFooter extends Component {
     };
 	componentDidMount() {
 		
-		var url = "https://revelation.digital/wp-json/newrd/v1/rd_social_menu";
+		var url = "https://development.revelation.digital/wp-json/newrd/v1/rd_social_menu";
 		axios.get(url).then(e => {
 			this.setState({pagedata: e.data.ResponseData})
 			this.setState({showInfo: 1})

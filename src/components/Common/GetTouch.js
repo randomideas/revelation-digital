@@ -14,7 +14,7 @@ class GetTouch extends Component {
     };
 	componentDidMount() {
 		
-		var url = "https://revelation.digital/wp-json/newrd/v1/rd_get_touch";
+		var url = "https://development.revelation.digital/wp-json/newrd/v1/rd_get_touch";
 		axios.get(url).then(e => {
 			this.setState({pagedata: e.data.ResponseData})
 			this.setState({showInfo: 1})

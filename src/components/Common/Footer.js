@@ -14,7 +14,7 @@ class Footer extends Component {
 	
 	componentDidMount() {
 		
-		var url = "https://revelation.digital/wp-json/newrd/v1/rd_menu_both";
+		var url = "https://development.revelation.digital/wp-json/newrd/v1/rd_menu_both";
 		axios.get(url).then(e => {
 			this.setState({pagedata: e.data.ResponseData})
 			this.setState({showInfo: 1})

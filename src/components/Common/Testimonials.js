@@ -14,7 +14,7 @@ class Testimonials extends Component {
     };
 	componentDidMount() {
 		
-		var url = "https://revelation.digital/wp-json/newrd/v1/rd_testimonial";
+		var url = "https://development.revelation.digital/wp-json/newrd/v1/rd_testimonial";
 		axios.get(url).then(e => {
 			this.setState({pagedata: e.data.ResponseData})
 			this.setState({showInfo: 1})
