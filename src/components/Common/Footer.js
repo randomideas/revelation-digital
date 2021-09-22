@@ -81,7 +81,7 @@ class Footer extends Component {
 						<SocialMenuFooter/>
 					</div>
 					<div className="col col--5 col--sm-12">
-						<img src="https://revelation.digital/wp-content/uploads/2020/02/icon-footer.png" className="attachment-thumbnail size-thumbnail" alt="" loading="lazy" width="80" height="113"/>
+						<img src="https://development.revelation.digital/wp-content/uploads/2020/02/icon-footer.png" className="attachment-thumbnail size-thumbnail" alt="" loading="lazy" width="80" height="113"/>
 					</div>
 				</div>
 				</div>
