@@ -57,7 +57,7 @@ class Testimonials extends Component {
 								<div className="text">
 									<h4>{prop.title}</h4>
 									<span dangerouslySetInnerHTML={{ __html: prop.content}}/>
-									<a href="" className="read-more">SEE THE STORY</a>
+									<a href={prop.link} className="read-more">SEE THE STORY</a>
 								</div>
 								</ReactWOW>
 							</div>
