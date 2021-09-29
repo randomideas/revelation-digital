@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import axios from "axios"
 import Slider from "react-slick";
 import ReactWOW from 'react-wow'
-
+import LazyLoad from 'react-lazyload';
 class Testimonials extends Component {
 	
 	
@@ -49,6 +49,7 @@ class Testimonials extends Component {
 						<Slider {...settings}>
 						{this.state.pagedata.slider.map((prop,i) => {return (
 						<div className="slide">
+							<LazyLoad height={200}  >
 							<div className="container">
 								<div className="img stellar testimonial_hero" data-stellar-ratio="1.1">
 									<img className="pull-right" src={prop.img} />
@@ -61,6 +62,7 @@ class Testimonials extends Component {
 								</div>
 								</ReactWOW>
 							</div>
+							</LazyLoad>
 						</div>
 						)})}
 						</Slider>
