@@ -294,7 +294,7 @@ class Page extends Component {
 						</div>
 						<div className="section section--normal-margin default-page">
 							<div className="container container-small">
-								<div className="text-area" dangerouslySetInnerHTML={{ __html: this.props.pageContext.Data.data.content}} />
+								 <iframe height="1800" width="100%" frameBorder="0" src={"https://development.revelation.digital/gravity-page/?gid=4"} title="description" />
 									
 							</div>
 						</div>
