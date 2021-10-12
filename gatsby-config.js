@@ -37,7 +37,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#9b03c3`,
         display: `minimal-ui`,
-        icon: `src/iamges/icon-footer.png`,
+        icon: `static/icon-footer.png`,
       },
     },
 	{
