@@ -35,7 +35,7 @@ class Page extends Component {
 	}
 	
 	componentDidMount() {
-		if(this.props.pageContext.Data.slug === "home"){
+		if(this.props.pageContext.Data.slug === "campaign-scene-investigators"){
 			var scene = document.getElementById('scene');
 			var parallaxInstance = new Parallax(scene);
 		}
@@ -516,7 +516,19 @@ class Page extends Component {
 						<>
 							<div className="hero-home">
 								<div className="hero_parallax" id="scene">
-									<div className="hero_layer hero_bg" style={{backgroundImage: "url("+bg+")"}} ></div>
+					<div id="foglayer_01" className="fog">
+	   <div className="image01"></div>
+	   <div className="image02"></div>
+    </div>
+    <div id="foglayer_02" className="fog">
+	   <div className="image01"></div>
+	   <div className="image02"></div>
+    </div>  
+    <div id="foglayer_03" class="fog">
+	   <div className="image01"></div>
+	   <div className="image02"></div>
+    </div>
+									
 									<div data-depth="0.3" className="hero_layer" style={{backgroundImage: "url("+smoke1+")"}} ></div>
 									<div data-depth="0.20" className="hero_layer" style={{backgroundImage: "url("+devices+")"}}  ></div>
 									<div data-depth="0.15" className="hero_layer" style={{backgroundImage: "url("+smoke2+")"}}  ></div>
