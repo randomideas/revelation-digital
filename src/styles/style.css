@@ -11097,13 +11097,13 @@ img.loader_animation {
 .client-stories-hero-section {
   padding-top: 12.0138888889vw;
   padding-bottom: 13.8888888889vw;
-  background-position: top 0px center;
+  background-position: unset;
   background-repeat: no-repeat;
   position: relative;
 }
 @media (max-width: 767px) {
   .client-stories-hero-section {
-   background-position: top 0px center;
+   background-position: unset;
     background-size: 100% auto;
     padding-top: 200px;
     padding-bottom: 100px;
