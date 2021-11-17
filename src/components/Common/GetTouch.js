@@ -27,7 +27,7 @@ class GetTouch extends Component {
 					<>
 						<div className="get-in-touch get-in-touch--client-stories no-triangle" data-stellar-background-ratio=".2">
 							<div className="line-vertical-center-wrapper line-vertical-center-wrapper--top-alt">
-								<div className="line-vertical-center is_active"></div>
+								<div className="line-vertical-center"></div>
 							</div>
 							<div className="container container-980">
 								<div className="row row--80">
