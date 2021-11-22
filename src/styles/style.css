@@ -5,6 +5,15 @@ footer .footer-top .menu-sm li {
   
     line-height: 18px;
 }
+
+.gfield_description.validation_message {
+    color: red;
+    font-size: 16px;
+    margin: -20px 0 20px 0;
+    text-align: right;
+}
+
+
 /* FOG ANIMATION */
 .fogwrapper {
   height: 100%;
