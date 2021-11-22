@@ -1,4 +1,6 @@
-
+footer .footer-top .menu-lg li {
+    line-height: 18px;
+}
 
 /* FOG ANIMATION */
 .fogwrapper {
