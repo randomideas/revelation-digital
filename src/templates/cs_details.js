@@ -19,15 +19,19 @@ class CSD extends Component {
 
 	  var shortUrlRegex   = '/youtu.be\/([a-zA-Z0-9_-]+)\??/i';
 	  var longUrlRegex    = '/youtube.com\/((?:embed)|(?:watch))((?:\?v\=)|(?:\/))([a-zA-Z0-9_-]+)/i';
+		var p =/^(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})(?:\S+)?$/;
 	  var controls_str    = controls ? '?controls=1' : '';
 		
-		if(url.match(longUrlRegex)){
-			var matches = url.match(longUrlRegex);
-			return 'https://www.youtube.com/embed/' + matches[matches.length - 1] + controls_str;
+		if(url.match(p)){
+			
+			var matches = url.match(p);
+			
+			return 'https://www.youtube.com/embed/' + matches[matches.length - 2];
 		}
-		if(url.match(shortUrlRegex)){
-			var matches = url.match(shortUrlRegex);
-			return 'https://www.youtube.com/embed/' + matches[matches.length - 1] + controls_str;
+		if(url.match(p)){
+			
+			var matches = url.match(p);
+			return 'https://www.youtube.com/embed/' + matches[matches.length - 2];
 		}
 		return false;
 	}
@@ -289,9 +293,7 @@ class CSD extends Component {
 										{(subsection.type === 'video') ? (
 											 <div className="cs_work-subsection">
 											  <div className="container">
-												<div className="cs_work-fullwidth-video">
-												{ this.getVideoHTML(subsection.video)}; ?>
-												</div>
+												<div className="cs_work-fullwidth-video" dangerouslySetInnerHTML={{ __html: this.getVideoHTML(subsection.video)}}  />
 											  </div>
 											</div>
 										) : ("")}
