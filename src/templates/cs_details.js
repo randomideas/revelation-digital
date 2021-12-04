@@ -102,7 +102,7 @@ class CSD extends Component {
 					<div className="container">
 						<div className="case-study-hero-text">
 							<h1 className="text-bebas text-bebas--ultra-big text-bebas--stroke text-bebas--stroke-white  ">{this.props.pageContext.Data.title}</h1>
-							<p className="text-bebas text-bebas--big text-bebas--white text-bebas--no-letter-spacing  ">{this.props.pageContext.Data.Data.hero_title}</p>
+							<p className="text-bebas text-bebas--big text-bebas--white text-bebas--no-letter-spacing" dangerouslySetInnerHTML={{ __html: this.props.pageContext.Data.Data.hero_title}} />
 						</div>
 					</div>
 				</section>
