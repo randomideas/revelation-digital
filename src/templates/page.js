@@ -9,13 +9,17 @@ import GetTouch from "../components/Common/GetTouch"
 import Listing from "../components/CSC/Listing"
 import { Helmet } from "react-helmet"
 import Counter from 'react-number-counter'
-import bg from "../images/hero/bg.webp"
-import smoke1 from "../images/hero/smoke1.webp"
-import devices from "../images/hero/devices.webp"
-import smoke2 from "../images/hero/smoke2.webp"
-import detective from "../images/hero/detective.webp"
-import flare from "../images/hero/flare.webp"
-import smoke3 from "../images/hero/smoke3.webp"
+import bg from "../images/hero/bg.jpg"
+import smoke1 from "../images/hero/smoke1.png"
+import devices from "../images/hero/devices.png"
+import smoke2 from "../images/hero/smoke2.png"
+import detective from "../images/hero/detective.png"
+import Mobile from "../images/hero/Mobile.png"
+import Tablet from "../images/hero/Tablet.png"
+import Laptop from "../images/hero/Laptop.png"
+import Desktop from "../images/hero/Desktop.png"
+import flare from "../images/hero/flare.png"
+import smoke3 from "../images/hero/smoke3.png"
 import ContactLogo from "../images/logo.svg"
 import Torus from "../images/Torus_2.mp4"
 import Float from "../images/Float_2.mp4"
@@ -515,22 +519,25 @@ class Page extends Component {
 				<> {(PageCode === "campaign-scene-investigators") ? (
 						<>
 							<div className="hero-home">
-								<div className="hero_parallax" id="scene">
-					<div id="foglayer_01" className="fog">
-	   <div className="image01"></div>
-	   <div className="image02"></div>
+								<div className="hero_parallax" data-friction-x="0.40" data-friction-y="0.40" data-scalar-x="15.0" data-scalar-y="15.0" id="scene">
+								<div id="foglayer_01" class="fog">
+	   <div class="image01"></div>
+	   <div class="image02"></div>
     </div>
-    <div id="foglayer_02" className="fog">
-	   <div className="image01"></div>
-	   <div className="image02"></div>
+    <div id="foglayer_02" class="fog">
+	   <div class="image01"></div>
+	   <div class="image02"></div>
     </div>  
     <div id="foglayer_03" class="fog">
-	   <div className="image01"></div>
-	   <div className="image02"></div>
+	   <div class="image01"></div>
+	   <div class="image02"></div>
     </div>
 									
-									
-									<div data-depth="0.20" className="hero_layer" style={{backgroundImage: "url("+devices+")"}}  ></div>
+									<div data-depth="0.3" className="hero_layer" style={{backgroundImage: "url("+smoke1+")"}} ></div>
+									<div data-depth="0.80" className="hero_layer" style={{backgroundImage: "url("+Desktop+")"}}  ></div>
+									<div data-depth="0.60" className="hero_layer" style={{backgroundImage: "url("+Laptop+")"}}  ></div>
+									<div data-depth="0.40" className="hero_layer" style={{backgroundImage: "url("+Tablet+")"}}  ></div>
+									<div data-depth="0.20" className="hero_layer" style={{backgroundImage: "url("+Mobile+")"}}  ></div>
 									<div data-depth="0.15" className="hero_layer" style={{backgroundImage: "url("+smoke2+")"}}  ></div>
 									<div data-depth="0.06" className="hero_layer" style={{backgroundImage: "url("+detective+")"}}  ></div>
 									<div data-depth="0.06" className="hero_layer hero_flare" style={{backgroundImage: "url("+flare+")"}}  ></div>
