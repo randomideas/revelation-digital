@@ -47,6 +47,9 @@
 	.case-study-client-quote blockquote p {
 		padding-bottom: 30px;
 	}
+	.case-study-client-quote blockquote cite{
+		line-height: 25px;
+	}
 }
 
 footer .footer-top .menu-lg li {
