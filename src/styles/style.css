@@ -1,3 +1,6 @@
+.inline{
+	display:inline-block;
+}
 
 .embed-responsive {
 	position: relative;
