@@ -502,7 +502,7 @@ class CSD extends Component {
 				</svg>
 			</span>
 			</a>
-			<h3 className="text-bebas inline">Read Next Story </h3>
+			<h3 className="text-bebas inline inline-link">Read Next Story </h3>
 			<a href="" className="inline">
 			<span className="arrow">
 				<svg xmlns="http://www.w3.org/2000/svg" width="113.526" height="43.006" viewBox="0 0 113.526 43.006">
