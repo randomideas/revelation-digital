@@ -493,38 +493,42 @@ class CSD extends Component {
 	<div className="container">
 	<div className="row">
 			<div className="col3">
-			<a href="" className="inline trans180">
-			<span className="arrow">
-				<svg xmlns="http://www.w3.org/2000/svg" width="113.526" height="43.006" viewBox="0 0 113.526 43.006">
-					<g id="Group_11" data-name="Group 11" transform="translate(0.594 0.503)">
-						<path id="Line_Copy_5" data-name="Line Copy 5" d="M110.625.875.406.813" transform="translate(0 20.056)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
-						<path id="Line_Copy_6" data-name="Line Copy 6" d="M28.51,1.076.406.813" transform="matrix(-0.704, 0.71, -0.71, -0.704, 112.367, 21.413)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
-						<path id="Line_Copy_7" data-name="Line Copy 7" d="M28.51-1.076.406-.812" transform="matrix(-0.704, -0.71, 0.71, -0.704, 112.367, 20.587)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
-					</g>
-				</svg>
-			</span>
-			</a>
+			{(this.props.pageContext.Data.next_slug == null) ? ("") : (<>
+				<a href={"/case-studies/"+this.props.pageContext.Data.next_slug} className="inline trans180">
+				<span className="arrow">
+					<svg xmlns="http://www.w3.org/2000/svg" width="113.526" height="43.006" viewBox="0 0 113.526 43.006">
+						<g id="Group_11" data-name="Group 11" transform="translate(0.594 0.503)">
+							<path id="Line_Copy_5" data-name="Line Copy 5" d="M110.625.875.406.813" transform="translate(0 20.056)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+							<path id="Line_Copy_6" data-name="Line Copy 6" d="M28.51,1.076.406.813" transform="matrix(-0.704, 0.71, -0.71, -0.704, 112.367, 21.413)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+							<path id="Line_Copy_7" data-name="Line Copy 7" d="M28.51-1.076.406-.812" transform="matrix(-0.704, -0.71, 0.71, -0.704, 112.367, 20.587)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+						</g>
+					</svg>
+				</span>
+				</a>
+			</>)}
+			
 			</div>
 			<div className="col6 text-center">
 			<h3 className="text-bebas inline inline-link">Read Next Story </h3>
 			</div>
 			<div className="col3">
-			<a href="" className="inline">
-			<span className="arrow">
-				<svg xmlns="http://www.w3.org/2000/svg" width="113.526" height="43.006" viewBox="0 0 113.526 43.006">
-					<g id="Group_11" data-name="Group 11" transform="translate(0.594 0.503)">
-						<path id="Line_Copy_5" data-name="Line Copy 5" d="M110.625.875.406.813" transform="translate(0 20.056)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
-						<path id="Line_Copy_6" data-name="Line Copy 6" d="M28.51,1.076.406.813" transform="matrix(-0.704, 0.71, -0.71, -0.704, 112.367, 21.413)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
-						<path id="Line_Copy_7" data-name="Line Copy 7" d="M28.51-1.076.406-.812" transform="matrix(-0.704, -0.71, 0.71, -0.704, 112.367, 20.587)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
-					</g>
-				</svg>
-			</span>
-			</a>
+			{(this.props.pageContext.Data.pre_slug == null) ? ("") : (<>
+				<a href={"/case-studies/"+this.props.pageContext.Data.pre_slug} className="inline">
+				<span className="arrow">
+					<svg xmlns="http://www.w3.org/2000/svg" width="113.526" height="43.006" viewBox="0 0 113.526 43.006">
+						<g id="Group_11" data-name="Group 11" transform="translate(0.594 0.503)">
+							<path id="Line_Copy_5" data-name="Line Copy 5" d="M110.625.875.406.813" transform="translate(0 20.056)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+							<path id="Line_Copy_6" data-name="Line Copy 6" d="M28.51,1.076.406.813" transform="matrix(-0.704, 0.71, -0.71, -0.704, 112.367, 21.413)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+							<path id="Line_Copy_7" data-name="Line Copy 7" d="M28.51-1.076.406-.812" transform="matrix(-0.704, -0.71, 0.71, -0.704, 112.367, 20.587)" fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+						</g>
+					</svg>
+				</span>
+				</a>
+			</>)}
 			</div>
 	</div>
 	</div>
 </div>
-
 				
 				{this.props.pageContext.Data.Data.more_links.map((links) => 
 					<div className="section-find-more">
