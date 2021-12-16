@@ -492,7 +492,7 @@ class CSD extends Component {
 				<div className="section-find-more">
 	<div className="container">
 	<div className="row">
-			<div className="col-lg-3">
+			<div className="col3">
 			<a href="" className="inline">
 			<span className="arrow">
 				<svg xmlns="http://www.w3.org/2000/svg" width="113.526" height="43.006" viewBox="0 0 113.526 43.006">
@@ -505,10 +505,10 @@ class CSD extends Component {
 			</span>
 			</a>
 			</div>
-			<div className="col-lg-6">
+			<div className="col6 text-center">
 			<h3 className="text-bebas inline inline-link">Read Next Story </h3>
 			</div>
-			<div className="col-lg-3">
+			<div className="col3">
 			<a href="" className="inline">
 			<span className="arrow">
 				<svg xmlns="http://www.w3.org/2000/svg" width="113.526" height="43.006" viewBox="0 0 113.526 43.006">
