@@ -66,7 +66,7 @@ class CSD extends Component {
 	
 	
 	render() {
-		console.log(this.props.pageContext.Data.Data);
+		console.log(this.props.pageContext.Data);
 		var img = this.props.pageContext.Data.Data.hero_image.url;
 		var sectionStyle = { 
 		  backgroundImage: `url(${img})`
