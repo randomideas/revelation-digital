@@ -1,3 +1,10 @@
+
+@media (max-width:480px)  {
+	.case-study-client-quote blockquote p {
+		padding-bottom: 30px;
+	}
+}
+
 footer .footer-top .menu-lg li {
     line-height: 18px;
 }
