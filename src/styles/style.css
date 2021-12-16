@@ -1,7 +1,12 @@
 .inline{
 	display:inline-block;
 }
-
+.inline-link {
+    font-size: 2.7777777778vw;
+    line-height: 2.7777777778vw;
+    letter-spacing: .045em;
+    color: #fff;
+}
 .embed-responsive {
 	position: relative;
 	display: block;
