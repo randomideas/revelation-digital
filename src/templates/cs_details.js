@@ -293,7 +293,7 @@ class CSD extends Component {
 										{(subsection.type === 'video') ? (
 											 <div className="cs_work-subsection">
 											  <div className="container">
-												<div className="cs_work-fullwidth-video" dangerouslySetInnerHTML={{ __html: this.getVideoHTML(subsection.video)}}  />
+												<div className="embed-responsive embed-responsive-16by9" dangerouslySetInnerHTML={{ __html: this.getVideoHTML(subsection.video)}}  />
 											  </div>
 											</div>
 										) : ("")}
