@@ -493,7 +493,7 @@ class CSD extends Component {
 	<div className="container">
 	<div className="row">
 			<div className="col3">
-			{(this.props.pageContext.Data.next_slug == null) ? ("") : (<>
+			{(this.props.pageContext.Data.next_slug == null) ? (<span className="dopacity" >demo text</span>) : (<>
 				<a href={"/case-studies/"+this.props.pageContext.Data.next_slug} className="inline trans180">
 				<span className="arrow">
 					<svg xmlns="http://www.w3.org/2000/svg" width="113.526" height="43.006" viewBox="0 0 113.526 43.006">
@@ -512,7 +512,7 @@ class CSD extends Component {
 			<h3 className="text-bebas inline inline-link">Read Next Story </h3>
 			</div>
 			<div className="col3">
-			{(this.props.pageContext.Data.pre_slug == null) ? ("") : (<>
+			{(this.props.pageContext.Data.pre_slug == null) ? (<span className="dopacity" >demo text</span>) : (<>
 				<a href={"/case-studies/"+this.props.pageContext.Data.pre_slug} className="inline">
 				<span className="arrow">
 					<svg xmlns="http://www.w3.org/2000/svg" width="113.526" height="43.006" viewBox="0 0 113.526 43.006">
