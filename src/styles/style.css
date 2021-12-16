@@ -1,3 +1,6 @@
+.dopacity{
+opacity:0;	
+}
 .trans180 {
     transform: rotate(180deg);
 }
