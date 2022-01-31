@@ -533,7 +533,7 @@ class Page extends Component {
 	   <div class="image02"></div>
     </div>
 									
-									<div data-depth="0.3" className="hero_layer" style={{backgroundImage: "url("+smoke1+")"}} ></div>
+									
 									<div data-depth="0.80" className="hero_layer" style={{backgroundImage: "url("+Desktop+")"}}  ></div>
 									<div data-depth="0.60" className="hero_layer" style={{backgroundImage: "url("+Laptop+")"}}  ></div>
 									<div data-depth="0.40" className="hero_layer" style={{backgroundImage: "url("+Tablet+")"}}  ></div>
