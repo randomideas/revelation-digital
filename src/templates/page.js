@@ -664,7 +664,7 @@ class Page extends Component {
 									<div className={(prop.reversed) ? ("text-image text-image--alt text-video") : ("text-image text-video")} >
 									  <div className="container">
 										<div className="text-video-video">
-										  <iframe width="560" height="315" src={prop.video_url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										  <iframe width="560" height="315" src={prop.video_url} title="YouTube video player" frameborder="0" allow="accelerometer;fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 										</div>
 										<ReactWOW animation='fadeInUp'>
 										<div className="text"> 
@@ -823,7 +823,7 @@ class Page extends Component {
 									<div className={(prop.reversed) ? ("text-image text-image--alt text-video") : ("text-image text-video")} >
 									  <div className="container">
 										<div className="text-video-video">
-										  <iframe width="560" height="315" src={prop.video_url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										  <iframe width="560" height="315" src={prop.video_url} title="YouTube video player" frameborder="0" allow="accelerometer;fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 										</div>
 										<ReactWOW animation='fadeInUp'>
 										<div className="text"> 
@@ -983,7 +983,7 @@ class Page extends Component {
 									<div className={(prop.reversed) ? ("text-image text-image--alt text-video") : ("text-image text-video")} >
 									  <div className="container">
 										<div className="text-video-video">
-										  <iframe width="560" height="315" src={prop.video_url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										  <iframe width="560" height="315" src={prop.video_url} title="YouTube video player" frameborder="0" allow="accelerometer;fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 										</div>
 										<ReactWOW animation='fadeInUp'>
 										<div className="text"> 
@@ -1144,7 +1144,7 @@ class Page extends Component {
 									<div className={(prop.reversed) ? ("text-image text-image--alt text-video") : ("text-image text-video")} >
 									  <div className="container">
 										<div className="text-video-video">
-										  <iframe width="560" height="315" src={prop.video_url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										  <iframe width="560" height="315" src={prop.video_url} title="YouTube video player" frameborder="0" allow="accelerometer;fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 										</div>
 										<ReactWOW animation='fadeInUp'>
 										<div className="text"> 
