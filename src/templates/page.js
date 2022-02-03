@@ -45,8 +45,9 @@ class Page extends Component {
 		}
 		if(this.props.pageContext.Data.slug === "contact"){
 			const queryParams = new URLSearchParams(window.location.search);
-			console.log(queryParams);
-			if(queryParams){
+			const id = queryParams.get('tab');
+			console.log(id);
+			if(id){
 				console.log("param avail");	
 			}
 			else{
