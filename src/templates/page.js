@@ -43,6 +43,19 @@ class Page extends Component {
 			var scene = document.getElementById('scene');
 			var parallaxInstance = new Parallax(scene);
 		}
+		if(this.props.pageContext.Data.slug === "contact"){
+			const queryParams = new URLSearchParams(window.location.search);
+			console.log(queryParams);
+			if(queryParams){
+				console.log("param avail");	
+			}
+			else{
+				console.log("param not avail");
+			}
+		}
+		
+		
+		
 	}
 	
 	clickPopupClose(param){
