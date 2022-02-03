@@ -48,7 +48,7 @@ class Page extends Component {
 			const id = queryParams.get('tab');
 			console.log(id);
 			if(id){
-				console.log("param avail");	
+				document.getElementById("contact-popup-3").classList.add("active"); 	
 			}
 			else{
 				console.log("param not avail");
