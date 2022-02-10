@@ -9978,8 +9978,12 @@ Homepage
   transition: all 0.3s ease;
 }
 .contact-main ul li a:hover {
-  -webkit-text-fill-color: #B019D4;
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke: 1px #fff;
   -webkit-text-stroke: none;
+}
+.whiteline {
+  -webkit-text-stroke: 1px #fff !important;
 }
 .contact-main .line-vertical-left-wrapper {
   width: 2px;
