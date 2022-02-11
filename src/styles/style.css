@@ -9970,9 +9970,9 @@ Homepage
 .contact-main ul li a {
   line-height: 1;
   text-transform: uppercase;
-  color: #B019D4;
+  color: #fff;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px #B019D4;
+  -webkit-text-stroke: 1px #fff;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
