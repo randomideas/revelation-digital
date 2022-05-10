@@ -112,7 +112,7 @@ class Page extends Component {
 			var base = this.props.pageContext.Data.data;
 			is_page = 1;
 		}
-		if(PageCode === "campaign-scene-investigators"){
+		if(PageCode === "home"){
 			var base = this.props.pageContext.Data.data.additional_data.Home;
 			is_page = 1;
 		}
