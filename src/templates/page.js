@@ -39,6 +39,7 @@ class Page extends Component {
 	}
 	
 	componentDidMount() {
+		console.log("slug"+this.props.pageContext.Data.slug);
 		if(this.props.pageContext.Data.slug === "campaign-scene-investigators"){
 			var scene = document.getElementById('scene');
 			var parallaxInstance = new Parallax(scene);
