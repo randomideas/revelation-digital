@@ -40,7 +40,7 @@ class Page extends Component {
 	
 	componentDidMount() {
 		console.log("slug"+this.props.pageContext.Data.slug);
-		if(this.props.pageContext.Data.slug === "campaign-scene-investigators"){
+		if(this.props.pageContext.Data.slug === "home"){
 			var scene = document.getElementById('scene');
 			var parallaxInstance = new Parallax(scene);
 		}
@@ -532,7 +532,7 @@ class Page extends Component {
 				</>
 				
 				{/* Home Page Code */}
-				<> {(PageCode === "campaign-scene-investigators") ? (
+				<> {(PageCode === "home") ? (
 						<>
 							<div className="hero-home">
 								<div className="hero_parallax" data-friction-x="0.40" data-friction-y="0.40" data-scalar-x="15.0" data-scalar-y="15.0" id="scene">
