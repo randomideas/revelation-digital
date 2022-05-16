@@ -602,7 +602,9 @@ class Page extends Component {
 							{base.solutions_section.map((prop,i) => {return (
 								<div className={(prop.image_position == "left") ? ("home-solutions-part home-solutions-part-alt") : ("home-solutions-part")}>
 									<div className="img-wrapper stellar" data-stellar-ratio="1.6">
-										<video src={prop.video.url} autoPlay playsInline muted loop></video>
+										<LazyLoad height={200} >
+										    <video src={prop.video.url} autoPlay playsInline muted loop></video>
+</LazyLoad>
 									</div>
 									<div className="container">
 										<ReactWOW  animation={(prop.image_position == "left") ? ("fadeInRight") : ("fadeInLeft")}>
