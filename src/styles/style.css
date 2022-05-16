@@ -136,7 +136,7 @@ footer .footer-top .menu-sm li {
 				foglayer_moveme 13s linear infinite;
 }
 #foglayer_03 .image01, #foglayer_03 .image02 {
-  background: url("fog-24.png") repeat-x top left transparent;
+  background: url("https://development.revelation.digital/img/fog-24.webp") repeat-x top left transparent;
   background-size: 100%;
   width: 50%;
   height: 100%;
