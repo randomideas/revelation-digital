@@ -3,6 +3,7 @@ import { Link} from 'gatsby'
 import axios from "axios"
 import SocialMenu from "./SocialMenu"
 import Menubg from '../../images/menu_bg.mp4';
+import LazyLoad from 'react-lazyload';
 class Header extends Component {
 	
 	
@@ -36,6 +37,7 @@ class Header extends Component {
 		return (
 			
 				<>
+			<LazyLoad height={200} >
 				<header className={this.state.show === false ? "header" : "header body-menu-open"} >
 					<a href="#" className="header-toggle" onClick={()=>{this.setState({show:!this.state.show})}} >menu toggle</a>
 					<div className="header-content">
@@ -63,6 +65,7 @@ class Header extends Component {
 					<video src={Menubg} autoPlay playsInline muted loop></video>
     
 				</div>
+/LazyLoad>
 				</>
 			
 		)
