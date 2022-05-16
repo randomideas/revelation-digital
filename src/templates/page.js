@@ -550,7 +550,7 @@ class Page extends Component {
     </div>
 									
 									
-									<div data-depth="0.80" className="hero_layer" style={{backgroundImage: "url("+Desktop+")"}}  ></div>
+									<div data-depth="0.80" className="hero_layer" style={{backgroundImage: "url(https://development.revelation.digital/img/Desktop.webp)"}}  ></div>
 									<div data-depth="0.60" className="hero_layer" style={{backgroundImage: "url(https://development.revelation.digital/img/Laptop.webp)"}}  ></div>
 									<div data-depth="0.40" className="hero_layer" style={{backgroundImage: "url(https://development.revelation.digital/img/Tablet.webp)"}}  ></div>
 									<div data-depth="0.20" className="hero_layer" style={{backgroundImage: "url(https://development.revelation.digital/img/Mobile.webp)"}}  ></div>
