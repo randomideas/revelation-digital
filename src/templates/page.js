@@ -534,20 +534,21 @@ class Page extends Component {
 				{/* Home Page Code */}
 				<> {(PageCode === "home") ? (
 						<>
+					<LazyLoad height={200} >
 							<div className="hero-home">
 								<div className="hero_parallax" data-friction-x="0.40" data-friction-y="0.40" data-scalar-x="15.0" data-scalar-y="15.0" id="scene">
-								<div id="foglayer_01" class="fog">
-	   <div class="image01"></div>
-	   <div class="image02"></div>
-    </div>
-    <div id="foglayer_02" class="fog">
-	   <div class="image01"></div>
-	   <div class="image02"></div>
-    </div>  
-    <div id="foglayer_03" class="fog">
-	   <div class="image01"></div>
-	   <div class="image02"></div>
-    </div>
+								  <div id="foglayer_01" class="fog">
+									   <div class="image01"></div>
+									   <div class="image02"></div>
+								    </div>
+								    <div id="foglayer_02" class="fog">
+									   <div class="image01"></div>
+									   <div class="image02"></div>
+								    </div>  
+								    <div id="foglayer_03" class="fog">
+									   <div class="image01"></div>
+									   <div class="image02"></div>
+								    </div>
 									
 									
 									<div data-depth="0.80" className="hero_layer" style={{backgroundImage: "url(https://development.revelation.digital/img/Desktop.webp)"}}  ></div>
@@ -560,6 +561,7 @@ class Page extends Component {
 									<div data-depth="-0.50" className="hero_layer" style={{backgroundImage: "url(https://development.revelation.digital/img/smoke3.webp)"}} ></div>
 								</div>
 							</div>
+							</LazyLoad>
 							<div className="hero-home-title">
 								<div className="text">
 									<ReactWOW delay='0.4s' animation='fadeInUp'><h1 className=" " data-wow-delay="0.4s">{base.hero_title}</h1></ReactWOW>
