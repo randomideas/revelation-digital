@@ -42,7 +42,7 @@ class Header extends Component {
 					<a href="#" className="header-toggle" onClick={()=>{this.setState({show:!this.state.show})}} >menu toggle</a>
 					<div className="header-content">
 						<Link to="/" className="logo">
-							<img src="https://development.revelation.digital/wp-content/uploads/2020/02/logo.svg" alt="Revelation Digital"/>
+							<img width="356" height="58" src="https://development.revelation.digital/wp-content/uploads/2020/02/logo.svg" alt="Revelation Digital"/>
 						</Link>
 					</div>
 				</header>
