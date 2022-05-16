@@ -65,7 +65,7 @@ class Header extends Component {
 					<video src={Menubg} autoPlay playsInline muted loop></video>
     
 				</div>
-/LazyLoad>
+</LazyLoad>
 				</>
 			
 		)
