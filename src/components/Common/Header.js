@@ -37,7 +37,7 @@ class Header extends Component {
 		return (
 			
 				<>
-			<LazyLoad height={200} >
+			
 				<header className={this.state.show === false ? "header" : "header body-menu-open"} >
 					<a href="#" className="header-toggle" onClick={()=>{this.setState({show:!this.state.show})}} >menu toggle</a>
 					<div className="header-content">
@@ -61,11 +61,11 @@ class Header extends Component {
 						</ul>
 						<SocialMenu/>
 					</div>
-					
+					<LazyLoad height={200} >
 					<video src={Menubg} autoPlay playsInline muted loop></video>
-    
+    					</LazyLoad>	
 				</div>
-</LazyLoad>
+
 				</>
 			
 		)
