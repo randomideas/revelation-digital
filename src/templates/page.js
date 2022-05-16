@@ -554,10 +554,10 @@ class Page extends Component {
 									<div data-depth="0.60" className="hero_layer" style={{backgroundImage: "url(https://development.revelation.digital/img/Laptop.webp)"}}  ></div>
 									<div data-depth="0.40" className="hero_layer" style={{backgroundImage: "url(https://development.revelation.digital/img/Tablet.webp)"}}  ></div>
 									<div data-depth="0.20" className="hero_layer" style={{backgroundImage: "url(https://development.revelation.digital/img/Mobile.webp)"}}  ></div>
-									<div data-depth="0.15" className="hero_layer" style={{backgroundImage: "url("+smoke2+")"}}  ></div>
-									<div data-depth="0.06" className="hero_layer" style={{backgroundImage: "url("+detective+")"}}  ></div>
+									<div data-depth="0.15" className="hero_layer" style={{backgroundImage: "url(https://development.revelation.digital/img/smoke2.webp)"}}  ></div>
+									<div data-depth="0.06" className="hero_layer" style={{backgroundImage: "url(https://development.revelation.digital/img/detective.webp)"}}  ></div>
 									<div data-depth="0.06" className="hero_layer hero_flare" style={{backgroundImage: "url("+flare+")"}}  ></div>
-									<div data-depth="-0.50" className="hero_layer" style={{backgroundImage: "url("+smoke3+")"}} ></div>
+									<div data-depth="-0.50" className="hero_layer" style={{backgroundImage: "url(https://development.revelation.digital/img/smoke3.webp)"}} ></div>
 								</div>
 							</div>
 							<div className="hero-home-title">
