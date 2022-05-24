@@ -73,7 +73,8 @@ module.exports = {
 		options: {
 		  siteUrl: 'https://revelation.digital',
 		},
-	},{
+	},
+  {
       resolve: 'gatsby-plugin-netlify',
       options: {
         headers: {
