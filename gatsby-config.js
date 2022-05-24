@@ -73,8 +73,7 @@ module.exports = {
 		options: {
 		  siteUrl: 'https://revelation.digital',
 		},
-	},
-  {
+	},{
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
