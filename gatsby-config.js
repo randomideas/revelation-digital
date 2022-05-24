@@ -75,21 +75,13 @@ module.exports = {
 		},
 	},
   {
-      resolve: `gatsby-plugin-netlify`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        headers: {
-          // Cache fonts forever
-          '/fonts/*': [
-            'Cache-Control: public',
-            'Cache-Control: max-age=365000000',
-            'Cache-Control: immutable'
-          ],
-          // Cache images for a week
-          '/images/*': [
-            'Cache-Control: public',
-            'Cache-Control: max-age=604800'
-          ]
-        }
+        fonts: [
+          `limelight`,
+          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+        ],
+        display: 'swap'
       }
     }
   ],
