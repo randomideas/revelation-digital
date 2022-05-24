@@ -75,7 +75,7 @@ module.exports = {
 		},
 	},
   {
-      resolve: 'gatsby-plugin-netlify',
+      resolve: `gatsby-plugin-netlify`,
       options: {
         headers: {
           // Cache fonts forever
