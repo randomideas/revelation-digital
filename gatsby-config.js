@@ -110,6 +110,30 @@ mergeCachingHeaders: true, // boolean to turn off the default caching headers
 transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
 generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
 },
-}
+},
+{
+      resolve: 'gatsby-plugin-htaccess',
+      options: {
+        custom: `
+            ## EXPIRES HEADER CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType image/svg "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType application/javascript "access 1 month"
+ExpiresByType application/x-javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 2 days"
+</IfModule>
+## EXPIRES HEADER CACHING ##
+        `,
+      },
+    },
   ],
 }

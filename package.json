@@ -13,6 +13,7 @@
     "gatsby-image": "^3.3.0",
     "gatsby-plugin-advanced-sitemap": "^2.0.0",
     "gatsby-plugin-google-tagmanager": "^3.13.0",
+    "gatsby-plugin-htaccess": "^1.4.0",
     "gatsby-plugin-manifest": "^3.3.0",
     "gatsby-plugin-netlify": "^4.4.0",
     "gatsby-plugin-netlify-headers": "^1.0.1",
