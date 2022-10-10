@@ -156,6 +156,38 @@ class Page extends Component {
 			var base = this.props.pageContext.Data.data;
 		}
 		var seo = this.props.pageContext.Data.seo;
+		const ldJsonlocal =  {
+   "@context": "http://schema.org",
+   "@type": "LocalBusiness",
+   "name": "Revelation Digital",
+   "url": "https://revelation.digital",
+   "logo": "https://development.revelation.digital/wp-content/uploads/2020/02/logo.svg",
+   "image": "https://development.revelation.digital/wp-content/uploads/2020/02/logo.svg",
+   "description": "An experienced team of Campaign Scene Investigators who love putting poor-performing digital campaigns behind bars.",
+   "telephone": "+61 402 030 520",
+   "priceRange" : "$$",
+   "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "100 Harris St",
+     "addressLocality": "Pyrmont",
+     "addressRegion": "NSW",
+     "addressCountry": "Australia",
+     "postalCode":"2009"
+    
+   },
+   "openingHours": [
+     "Mo-Fr 09:00-18:00"
+   ],
+   "location": {
+     "@type": "Place",
+     "geo": {
+           "@type": "GeoCoordinates",
+     "latitude": "-33.8686539",
+     "longitude": "151.1934238"
+     }
+   },
+   "hasMap": "https://goo.gl/maps/8RE6WvK2RqeHJXjG9",
+ };
 		const ldJson = {
      "@context": "https://schema.org",
      "@type":"Organization",
@@ -199,13 +231,18 @@ class Page extends Component {
 					<meta property="twitter:title" content={seo.twittertitle}></meta>
 					<meta property="twitter:description" content={seo.twitterdescription}></meta>
 
-					<script type="application/ld+json">
-						
-  {JSON.stringify(ldJson)}
-</script>
-				</Helmet>
+					
+					<script type="application/ld+json">{JSON.stringify(ldJsonlocal)}</script>
 
 
+
+</Helmet>
+
+{(PageCode === "home") ? (
+<Helmet>
+	<script type="application/ld+json">{JSON.stringify(ldJson)}</script>
+	</Helmet>
+) : ("")}
 
 				{/* About Us Page Code */}
 				<> {(PageCode === "about") ? (
