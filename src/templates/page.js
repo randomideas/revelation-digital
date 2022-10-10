@@ -199,7 +199,7 @@ class Page extends Component {
 					<meta property="twitter:title" content={seo.twittertitle}></meta>
 					<meta property="twitter:description" content={seo.twitterdescription}></meta>
 				</Helmet>
-{(PageCode === "home") ? (
+
 <Helmet>
 	
 	<script
@@ -210,7 +210,7 @@ class Page extends Component {
 	
 
 </Helmet>
-) : ("")}
+
 				{/* About Us Page Code */}
 				<> {(PageCode === "about") ? (
 						<>
