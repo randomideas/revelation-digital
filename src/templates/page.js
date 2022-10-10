@@ -205,16 +205,7 @@ class Page extends Component {
 </script>
 				</Helmet>
 
-<Helmet>
-	
-	<script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
-  />
-	
-	
 
-</Helmet>
 
 				{/* About Us Page Code */}
 				<> {(PageCode === "about") ? (
