@@ -156,28 +156,7 @@ class Page extends Component {
 			var base = this.props.pageContext.Data.data;
 		}
 		var seo = this.props.pageContext.Data.seo;
-		
-		return (
-			<Layout>	
-			<>
-				<Helmet>
-					<title>{seo.title}</title>
-					<meta name="title" content={seo.title}></meta>
-					<meta name="description" content={seo.metadesc}></meta>
-					<meta name="keywords" content={seo.focuskw}></meta>
-					<meta property="og:locale" content="en_US" />
-					<meta property="og:type" content="article"></meta>
-					<meta property="og:title" content={seo.opengraphtitle}></meta>
-					<meta property="og:description" content={seo.opengraphdescription}></meta>
-					<meta property="og:site_name" content="Revelation Digital"></meta>
-					<meta property="twitter:card" content="summary_large_image"></meta>
-					<meta property="twitter:title" content={seo.twittertitle}></meta>
-					<meta property="twitter:description" content={seo.twitterdescription}></meta>
-				</Helmet>
-{(PageCode === "home") ? (
-<Helmet>
-	<script type="application/ld+json">
-   {
+		let data ={
      "@context": "https://schema.org",
      "@type":"Organization",
      "name": "Revelation Digital",
@@ -202,7 +181,33 @@ class Page extends Component {
        "https://www.facebook.com/revelationdigitalau/",
        "https://twitter.com/revelation_au"]
    }
-</script>
+
+		return (
+			<Layout>	
+			<>
+				<Helmet>
+					<title>{seo.title}</title>
+					<meta name="title" content={seo.title}></meta>
+					<meta name="description" content={seo.metadesc}></meta>
+					<meta name="keywords" content={seo.focuskw}></meta>
+					<meta property="og:locale" content="en_US" />
+					<meta property="og:type" content="article"></meta>
+					<meta property="og:title" content={seo.opengraphtitle}></meta>
+					<meta property="og:description" content={seo.opengraphdescription}></meta>
+					<meta property="og:site_name" content="Revelation Digital"></meta>
+					<meta property="twitter:card" content="summary_large_image"></meta>
+					<meta property="twitter:title" content={seo.twittertitle}></meta>
+					<meta property="twitter:description" content={seo.twitterdescription}></meta>
+				</Helmet>
+{(PageCode === "home") ? (
+<Helmet>
+	
+	<script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+  />
+	
+	
 
 </Helmet>
 ) : ("")}
