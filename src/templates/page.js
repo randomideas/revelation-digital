@@ -156,7 +156,7 @@ class Page extends Component {
 			var base = this.props.pageContext.Data.data;
 		}
 		var seo = this.props.pageContext.Data.seo;
-		let data ={
+		const ldJson = {
      "@context": "https://schema.org",
      "@type":"Organization",
      "name": "Revelation Digital",
@@ -180,7 +180,7 @@ class Page extends Component {
        "https://www.linkedin.com/company/revelationdigital/about/",
        "https://www.facebook.com/revelationdigitalau/",
        "https://twitter.com/revelation_au"]
-   }
+   };
 
 		return (
 			<Layout>	
@@ -198,6 +198,11 @@ class Page extends Component {
 					<meta property="twitter:card" content="summary_large_image"></meta>
 					<meta property="twitter:title" content={seo.twittertitle}></meta>
 					<meta property="twitter:description" content={seo.twitterdescription}></meta>
+
+					<script type="application/ld+json">
+						
+  {JSON.stringify(ldJson)}
+</script>
 				</Helmet>
 
 <Helmet>
