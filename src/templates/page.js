@@ -174,38 +174,7 @@ class Page extends Component {
 					<meta property="twitter:title" content={seo.twittertitle}></meta>
 					<meta property="twitter:description" content={seo.twitterdescription}></meta>
 				</Helmet>
-{(PageCode === "home") ? (
-	<Helmet>
-	<script type="application/ld+json">
-   {
-     "@context": "https://schema.org",
-     "@type":"Organization",
-     "name": "Revelation Digital",
-     "url": "https://revelation.digital",
-     "logo": "https://development.revelation.digital/wp-content/uploads/2020/02/logo.svg",
-     "address": {
-       "@type": "PostalAddress",
-       "streetAddress": "100 Harris St",
-       "addressLocality": "Pyrmont",
-       "addressRegion": "NSW",
-       "addressCountry": "Australia",
-       "postalCode":"2009"
-      
-     },
-     "contactPoint": {
-       "@type": "ContactPoint",
-       "contactType": "contact",
-       "telephone": "+61 402 030 520"
-     },
-     "sameAs" : [
-       "https://www.linkedin.com/company/revelationdigital/about/",
-       "https://www.facebook.com/revelationdigitalau/",
-       "https://twitter.com/revelation_au"]
-   }
-</script>
 
-	</Helmet>
-) : ("")}
 				{/* About Us Page Code */}
 				<> {(PageCode === "about") ? (
 						<>
