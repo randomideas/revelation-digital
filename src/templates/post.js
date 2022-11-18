@@ -40,7 +40,7 @@ class Post extends Component {
 						</div>
 						<div className="section section--normal-margin default-page">
 							<div className="container container-small">
-								<div className="text-area" dangerouslySetInnerHTML={{ __html: this.props.pageContext.Data.data.content}} />
+								<div className="text-area" dangerouslySetInnerHTML={{ __html: this.props.pageContext.Data.content}} />
 									
 							</div>
 						</div>
