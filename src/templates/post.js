@@ -38,7 +38,13 @@ class Post extends Component {
 								<h1 className="text-bebas text-bebas--big">{this.props.pageContext.Data.title}</h1>
 							</div>
 						</div>
+	
 						<div className="section section--normal-margin default-page">
+							<div className="row">
+							<div className="col-lg-12">
+	{(this.props.pageContext.Data.image != "") ? (<><img  src={this.props.pageContext.Data.image} /></>) ? ("")}
+							</div>
+	</div>
 							<div className="container container-small">
 								<div className="text-area" dangerouslySetInnerHTML={{ __html: this.props.pageContext.Data.content}} />
 									
