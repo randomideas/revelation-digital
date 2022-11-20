@@ -43,7 +43,18 @@ class Blog extends Component {
 	
 							{this.props.pageContext.Data && this.props.pageContext.Data.map( prop => {
 														return (
-															<></>
+															<>
+							 
+							 <div class="row">
+							 <div class="col-lg-6">
+							 	{prop.image != "") ? (<><img  src={prop.image} /></>) : ("")}
+							 </div>
+							 <div class="col-lg-6">
+								 <h3 class="text-bebas text-bebas--big text--pink">{prop.title}</h3>
+<p><Link to={"blog/"+prop.slug}  class="jsContactCardTrigger block text-bebas text-bebas--big text-bebas--stroke">Read More</Link></p>
+							 </div>
+							 </div>
+							 </>
 															
 														)
 													})}
