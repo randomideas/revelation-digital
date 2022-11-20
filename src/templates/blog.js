@@ -41,7 +41,7 @@ class Blog extends Component {
 	
 						<div className="section section--normal-margin default-page">
 	
-							{this.props.pageContext.Data && this.props.pageContext.Data.edges.map( prop => {
+							{this.props.pageContext.Data && this.props.pageContext.Data.map( prop => {
 														return (
 															<></>
 															
