@@ -56,8 +56,8 @@ exports.createPages = async ({ actions, graphql }) => {
 		});
   }));
 }	
-
-await Promise.all(Data.data.ResponseData.Post.map(async (value,i) => {
+var i = 0;
+await Promise.all(Data.data.ResponseData.Post.map(async (value) => {
     if(i == 0){
     	console.log(i);
 	    const BlogTemplate = require.resolve(`./src/templates/blog.js`);
@@ -69,8 +69,8 @@ await Promise.all(Data.data.ResponseData.Post.map(async (value,i) => {
 			}
 		});
     }
-	console.log(i);
 	
+	i++;
   }));
 }	
 
