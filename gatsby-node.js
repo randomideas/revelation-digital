@@ -57,3 +57,23 @@ exports.createPages = async ({ actions, graphql }) => {
   }));
 }	
 
+await Promise.all(Data.data.ResponseData.Post.map(async (value,i) => {
+    if(i == 0){
+    	console.log(i);
+	    const BlogTemplate = require.resolve(`./src/templates/blog.js`);
+		createPage({
+			path: `/blog`,
+			component: slash(BlogTemplate),
+			context: {
+				Data: Data.data.ResponseData.Post,
+			}
+		});
+    }
+	console.log(i);
+	
+  }));
+}	
+
+
+
+
