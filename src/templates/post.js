@@ -42,7 +42,7 @@ class Post extends Component {
 						<div className="section section--normal-margin default-page">
 							<div className="row">
 							<div className="col-lg-12">
-	{(this.props.pageContext.Data.image != "") ? (<><img  src={this.props.pageContext.Data.image} /></>) ? ("")}
+	{(this.props.pageContext.Data.image != "") ? (<><img  src={this.props.pageContext.Data.image} /></>) : ("")}
 							</div>
 	</div>
 							<div className="container container-small">
