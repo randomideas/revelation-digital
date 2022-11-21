@@ -55,14 +55,7 @@ exports.createPages = async ({ actions, graphql }) => {
 			}
 		});
 		 
-		 const BlogTemplate = require.resolve(`./src/templates/blog.js`);
-		createPage({
-			path: `/blog`,
-			component: slash(BlogTemplate),
-			context: {
-				Data: Data.data.ResponseData.Post,
-			}
-		});
+		
 		 
   }));
 	
