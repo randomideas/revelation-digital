@@ -29,7 +29,17 @@ class Post extends Component {
 				<>
 				<Helmet>
 					<title>{this.props.pageContext.Data.title} . Revelation Digital </title>
-					
+					<meta name="title" content={this.props.pageContext.Data.title}></meta>
+				<meta name="description" content={this.props.pageContext.Data.meta}></meta>
+				 <meta name="keywords" content=""></meta>
+
+				<meta property="og:type" content="website"></meta>
+				<meta property="og:title" content={this.props.pageContext.Data.title}></meta>
+				<meta property="og:description" content={this.props.pageContext.Data.meta}></meta>
+
+				<meta property="twitter:card" content="summary_large_image"></meta>
+				<meta property="twitter:title" content={this.props.pageContext.Data.title}></meta>
+				<meta property="twitter:description" content={this.props.pageContext.Data.meta}></meta>	
 				</Helmet>
 				<div className="simple-hero">
 							<div className="cloud-left"><img src={cloud1} alt="" /></div>
