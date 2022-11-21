@@ -1,6 +1,11 @@
+.linkreadmore {
+  font-size: 20px;
+  color: #fff;
+}
 .blogsec .ttl {
   font-size: 30px;
   text-align: center;
+	line-height: 60px;
 }
 .blogsec{
 	padding: 15px 13px;
