@@ -48,7 +48,7 @@ class Post extends Component {
 	</div>
 </div>
 							<div className="container container-small">
-								<div className="text-area" dangerouslySetInnerHTML={{ __html: this.props.pageContext.Data.content}} />
+								<div className="text-area blogcontent" dangerouslySetInnerHTML={{ __html: this.props.pageContext.Data.content}} />
 									
 							</div>
 						</div>
