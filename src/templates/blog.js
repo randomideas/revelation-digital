@@ -52,7 +52,7 @@ class Blog extends Component {
 							 	{(prop.image != "") ? (<><img  src={prop.image} /></>) : ("")}
 							 
 								 <h3 class="ttl text-bebas text-bebas--big text--pink">{prop.title}</h3>
-<p><Link to={"/blog/"+prop.slug}  class="jsContactCardTrigger block text-bebas text-bebas--big text-bebas--stroke">Read More</Link></p>
+<p><Link to={"/blog/"+prop.slug}  class="jsContactCardTrigger block text-bebas text-bebas--big linkreadmore">Read More</Link></p>
 							 </div>
 							 
 							 </>
