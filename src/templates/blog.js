@@ -48,7 +48,7 @@ class Blog extends Component {
 															<>
 							 
 							 
-							 <div class="col-lg-4">
+							 <div class="col-lg-4 col4 col-md-4 col-sm-6 blogsec">
 							 	{(prop.image != "") ? (<><img  src={prop.image} /></>) : ("")}
 							 
 								 <h3 class="text-bebas text-bebas--big text--pink">{prop.title}</h3>
