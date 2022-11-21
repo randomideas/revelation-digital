@@ -1,6 +1,9 @@
 .linkreadmore {
-  font-size: 20px !important;
-  color: #fff;
+ font-size: 20px !important;
+color: #fff;
+line-height: 30px !important;
+text-align: end;
+margin-right: 10px;
 }
 .blogsec .ttl {
   font-size: 30px;
@@ -10,7 +13,7 @@
 .blogsec{
 	padding: 15px 13px !important;
 border-radius: 10px;
-border: 2px solid #fff;
+
 }
 .blogsec img{
 border-radius: 10px;
