@@ -41,25 +41,26 @@ class Blog extends Component {
 	
 						<div className="section section--normal-margin default-page">
 	<div className="container container-small">
+	<div class="row">
 	
 							{this.props.pageContext.Data && this.props.pageContext.Data.map( prop => {
 														return (
 															<>
 							 
-							 <div class="cs_results-row">
-							 <div class="cs_results-row__col cs_results-row__col--text">
+							 
+							 <div class="col-lg-4">
 							 	{(prop.image != "") ? (<><img  src={prop.image} /></>) : ("")}
-							 </div>
-							 <div class="cs_results-row__col cs_results-row__col--text bloglink">
+							 
 								 <h3 class="text-bebas text-bebas--big text--pink">{prop.title}</h3>
 <p><Link to={"/blog/"+prop.slug}  class="jsContactCardTrigger block text-bebas text-bebas--big text-bebas--stroke">Read More</Link></p>
 							 </div>
-							 </div>
+							 
 							 </>
 															
 														)
 													})}
 						</div>
+</div>
 </div>
 				
 				<GetTouch/>
