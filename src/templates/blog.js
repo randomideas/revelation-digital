@@ -40,6 +40,7 @@ class Blog extends Component {
 						</div>
 	
 						<div className="section section--normal-margin default-page">
+	<div className="container container-small">
 	
 							{this.props.pageContext.Data && this.props.pageContext.Data.map( prop => {
 														return (
@@ -59,6 +60,7 @@ class Blog extends Component {
 														)
 													})}
 						</div>
+</div>
 				
 				<GetTouch/>
 				</>
