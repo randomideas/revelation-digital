@@ -49,7 +49,7 @@ class Blog extends Component {
 							 <div class="cs_results-row__col cs_results-row__col--text">
 							 	{(prop.image != "") ? (<><img  src={prop.image} /></>) : ("")}
 							 </div>
-							 <div class="cs_results-row__col cs_results-row__col--text">
+							 <div class="cs_results-row__col cs_results-row__col--text bloglink">
 								 <h3 class="text-bebas text-bebas--big text--pink">{prop.title}</h3>
 <p><Link to={"/blog/"+prop.slug}  class="jsContactCardTrigger block text-bebas text-bebas--big text-bebas--stroke">Read More</Link></p>
 							 </div>
