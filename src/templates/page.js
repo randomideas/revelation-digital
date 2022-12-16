@@ -958,7 +958,31 @@ class Page extends Component {
 								</>
 								<>
 								{(prop.acf_fc_layout === "features") ? (
-									<div className="section--normal-margin">
+								
+								<>
+								{(prop.title == 'Media We Buy') ? (
+								<div className="section--normal-margin">
+										<div className="container">
+											<ReactWOW  animation='fadeInLeft'>
+											<h2 className="text-bebas text-bebas--big text--pink features-title fadeInLeft"  > Our Services </h2>
+											</ReactWOW>
+
+									<div className="features-table features-table--3">
+										{base.links.map((proptable,k) => {return (	
+										<ReactWOW  animation='zoomIn' delay={'0.'+((k+1)*2)+'s'} >		
+										<div className="item  ">
+											<Link to={proptable.link} ><img src={proptable.icon} alt=""/></Link>
+											<Link to={proptable.link} ><h4>{proptable.title} </h4></Link>
+											  <p>{proptable.short_desc}</p>
+										</div>
+										</ReactWOW>
+									   )})} 
+									</div>
+
+								</div>
+							</div>
+								) : (
+								<div className="section--normal-margin">
 										<div className="container">
 											<ReactWOW  animation='fadeInLeft'>
 											<h2 className={(prop.title_center == true)? ("text-bebas text-bebas--big text--pink features-title features-title--center") : ("text-bebas text-bebas--big text--pink features-title")} dangerouslySetInnerHTML={{ __html: prop.title }} />
@@ -978,6 +1002,12 @@ class Page extends Component {
 
 								</div>
 							</div>
+								
+								)}
+								</>
+								
+								
+									
 								) : ("")}
 								</>
 								<>
@@ -1001,28 +1031,7 @@ class Page extends Component {
 								
 							)})}
 							
-							<>
-							<div className="section--normal-margin">
-										<div className="container">
-											<ReactWOW  animation='fadeInLeft'>
-											<h2 className="text-bebas text-bebas--big text--pink features-title fadeInLeft"  > Our Services </h2>
-											</ReactWOW>
-
-									<div className="features-table features-table--3">
-										{base.links.map((proptable,k) => {return (	
-										<ReactWOW  animation='zoomIn' delay={'0.'+((k+1)*2)+'s'} >		
-										<div className="item  ">
-											<Link to={proptable.link} ><img src={proptable.icon} alt=""/></Link>
-											<Link to={proptable.link} ><h4>{proptable.title} </h4></Link>
-											  <p>{proptable.short_desc}</p>
-										</div>
-										</ReactWOW>
-									   )})} 
-									</div>
-
-								</div>
-							</div>
-							</>
+							
 							
 							
 							
