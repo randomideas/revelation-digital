@@ -1002,6 +1002,32 @@ class Page extends Component {
 							)})}
 							
 							<>
+							<div className="section--normal-margin">
+										<div className="container">
+											<ReactWOW  animation='fadeInLeft'>
+											<h2 className={(prop.title_center == true)? ("text-bebas text-bebas--big text--pink features-title features-title--center") : ("text-bebas text-bebas--big text--pink features-title")}  > Our Services </h2>
+											</ReactWOW>
+
+									<div className="features-table features-table--3">
+										{base.links.map((proptable,k) => {return (	
+										<ReactWOW  animation='zoomIn' delay={'0.'+((k+1)*2)+'s'} >		
+										<div className="item  ">
+											<a href={proptable.link} ><img src={proptable.icon.url} alt=""/></a>
+											<h4>{proptable.title} </h4>
+											  <p>{proptable.short_desc}</p>
+										</div>
+										</ReactWOW>
+									   )})} 
+									</div>
+
+								</div>
+							</div>
+							</>
+							
+							
+							
+							
+							<>
 							{(base.solution_cta_text !== "") ? (
 							<div className="section-find-more">
 								<div className="container">
