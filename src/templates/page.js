@@ -1012,8 +1012,8 @@ class Page extends Component {
 										{base.links.map((proptable,k) => {return (	
 										<ReactWOW  animation='zoomIn' delay={'0.'+((k+1)*2)+'s'} >		
 										<div className="item  ">
-											<a href={proptable.link} ><img src={proptable.icon} alt=""/></a>
-											<h4>{proptable.title} </h4>
+											<Link to={proptable.link} ><img src={proptable.icon} alt=""/></Link>
+											<Link to={proptable.link} ><h4>{proptable.title} </h4></Link>
 											  <p>{proptable.short_desc}</p>
 										</div>
 										</ReactWOW>
