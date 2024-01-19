@@ -28,7 +28,7 @@ import Sprial from "../images/Sprial_2.mp4"
 import Parallax from 'parallax-js'
 import cloud1 from '../images/cloud1.png';
 import cloud2 from '../images/cloud2.png';
-
+import $ from 'jquery';
 class Page extends Component {
 	
 	constructor(props) {
@@ -39,6 +39,15 @@ class Page extends Component {
 	}
 	
 	componentDidMount() {
+		if ( window.matchMedia('(min-width: 768px)').matches ) {
+			$.stellar({
+			  horizontalScrolling: false,
+			  responsive: true,
+			  positionProperty: 'transform',
+			  hideDistantElements: false
+			});
+		  }
+		
 		console.log("slug"+this.props.pageContext.Data.slug);
 		if(this.props.pageContext.Data.slug === "home"){
 			var scene = document.getElementById('scene');
