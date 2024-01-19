@@ -40,7 +40,7 @@ class Page extends Component {
 	
 	componentDidMount() {
 		if ( window.matchMedia('(min-width: 768px)').matches ) {
-			$.stellar({
+			jquery.stellar({
 			  horizontalScrolling: false,
 			  responsive: true,
 			  positionProperty: 'transform',
