@@ -14,7 +14,7 @@ class Footer extends Component {
 	
 	componentDidMount() {
 		
-		var url = "https://development.revelation.digital/wp-json/newrd/v1/rd_menu_both";
+		var url = "https://development.revelation.digital/wp-json/newrd/v1/rd_footer_menu";
 		axios.get(url).then(e => {
 			this.setState({pagedata: e.data.ResponseData})
 			this.setState({showInfo: 1})
@@ -35,11 +35,54 @@ class Footer extends Component {
 				<div className="container">
 					<div className="footer-top">
 						<div className="row">
-							<div className="col col--3 col--sm-12 hide--sm-up">
-								<ul className="menu-lg">
+							<div className="col col--3 col--sm-12">
+							<h2 class="footer-heading">Solutions</h2>
+								<ul className="menu-sm">
 									{(this.state.showInfo === 1) ? (
 										<>
-										{this.state.pagedata.Primary.map((prop,i) => {return (
+										{this.state.pagedata.Solutions.map((prop,i) => {return (
+											<li key={"Menu"+i} className={("/"+prop.Slug === str_url) ? ("current-menu-item") : ("")} >
+										<a  href={"/"+prop.Slug} >{prop.Name}</a>
+											</li>
+										)})}
+										</>
+									) : ("")}
+								</ul>
+							</div>
+							<div className="col col--3 col--sm-12">
+							<h2 class="footer-heading">Success Stories</h2>
+								<ul className="menu-sm">
+									{(this.state.showInfo === 1) ? (
+										<>
+										{this.state.pagedata.Successstories.map((prop,i) => {return (
+											<li key={"Menu"+i} className={("/"+prop.Slug === str_url) ? ("current-menu-item") : ("")} >
+										<a  href={"/"+prop.Slug} >{prop.Name}</a>
+											</li>
+										)})}
+										</>
+									) : ("")}
+								</ul>
+							</div>
+							<div className="col col--3 col--sm-12">
+							<h2 class="footer-heading">Marketing Services</h2>
+								<ul className="menu-sm">
+									{(this.state.showInfo === 1) ? (
+										<>
+										{this.state.pagedata.Marketingservices.map((prop,i) => {return (
+											<li key={"Menu"+i} className={("/"+prop.Slug === str_url) ? ("current-menu-item") : ("")} >
+										<a  href={"/"+prop.Slug} >{prop.Name}</a>
+											</li>
+										)})}
+										</>
+									) : ("")}
+								</ul>
+							</div>
+							<div className="col col--3 col--sm-12">
+							<h2 class="footer-heading">Contact</h2>
+								<ul className="menu-sm">
+									{(this.state.showInfo === 1) ? (
+										<>
+										{this.state.pagedata.Contact.map((prop,i) => {return (
 											<li key={"Menu"+i} className={("/"+prop.Slug === str_url) ? ("current-menu-item") : ("")} >
 										<a  href={"/"+prop.Slug} >{prop.Name}</a>
 											</li>
@@ -49,7 +92,7 @@ class Footer extends Component {
 								</ul>
 							</div>
 						
-						<div className="col col--4 col--sm-12">
+						{/* <div className="col col--4 col--sm-12">
 							<ul className="menu-sm">
 								{(this.state.showInfo === 1) ? (
 									<>
@@ -61,7 +104,7 @@ class Footer extends Component {
 									</>
 								) : ("")}
 							</ul>
-						</div>
+						</div> */}
 					
 					<div className="col col--3 col--sm-12 hide--sm-down">
 						<ul className="menu-lg">
