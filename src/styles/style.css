@@ -14131,5 +14131,49 @@ a.btn.btn-white-new {
   color: #fff;
   background-color: transparent;
 }
+.about-top-intro .pink-wrapper-text {
+  position: absolute;
+  width: 50%;
+  background: #B019D4;
+  mix-blend-mode: overlay;
+  top: 0px !important;
+  height: 40vw !important;
+}
+.about-top-section .top-section-text h1 span {
+  text-align: center !important;
+}
+
+.contact-main ul li a {
+  line-height: 1;
+  text-transform: uppercase;
+  color: #B019D4;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #B019D4;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.contact-main ul li a:hover {
+  -webkit-text-stroke: 1px #B019D4 !important;
+  -webkit-text-fill-color: #B019D4 !important;
+}
+.footer-top .col.col--3.col--sm-12 {
+  width: 20%;
+}
+
+.footer-top .col.col--5.col--sm-12 {
+  width: 20%;
+}
+
+h2.footer-heading {
+  color: #fff;
+  font-size: 1.3888888889vw;
+  font-family: "BebasNeue";
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.footer-top .col.col--3.col--sm-12:nth-child(1) {
+  width: 14%;
+}
 
 
