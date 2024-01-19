@@ -8941,6 +8941,11 @@ Homepage
   padding-top: 6.9444444444vw;
   background: black;
 }
+.home-arrow-down{
+  visibility: visible;
+  animation-delay: 0.8s;
+  animation-name: fadeInUp;
+}
 @media screen and (min-width: 1600px) {
   .main-content {
     padding-top: 111.1111111111px;
