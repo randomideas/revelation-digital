@@ -28,7 +28,7 @@ import Sprial from "../images/Sprial_2.mp4"
 import Parallax from 'parallax-js'
 import cloud1 from '../images/cloud1.png';
 import cloud2 from '../images/cloud2.png';
-import $ from 'jquery';
+import jquery from 'jquery';
 class Page extends Component {
 	
 	constructor(props) {
