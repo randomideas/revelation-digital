@@ -635,6 +635,7 @@ class Page extends Component {
 								<div className="text">
 									<ReactWOW delay='0.4s' animation='fadeInUp'><h1 className=" " data-wow-delay="0.4s">{base.hero_title}</h1></ReactWOW>
 									<ReactWOW delay='0.4s' animation='fadeInUp'><p className=" " data-wow-delay="0.8s">{base.hero_second_text}</p></ReactWOW>
+									<img src="https://development.revelation.digital/wp-content/uploads/2023/10/arrow-down.png" class="fadeInUp home-image" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;"></img>
 								</div>
 								<div className="line-vertical-center-wrapper">
 									<div className="line-vertical-center is_active"></div>
