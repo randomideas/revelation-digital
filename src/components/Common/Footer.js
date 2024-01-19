@@ -106,7 +106,7 @@ class Footer extends Component {
 							</ul>
 						</div> */}
 					
-					<div className="col col--3 col--sm-12 hide--sm-down">
+					{/* <div className="col col--3 col--sm-12 hide--sm-down">
 						<ul className="menu-lg">
 							{(this.state.showInfo === 1) ? (
 								<>
@@ -118,7 +118,7 @@ class Footer extends Component {
 								</>
 							) : ("")}
 						</ul>
-					</div>
+					</div> */}
          
 					<div className="col col--3 col--sm-12 hide--sm-up">
 						<SocialMenuFooter/>
