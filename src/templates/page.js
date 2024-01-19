@@ -29,6 +29,7 @@ import Parallax from 'parallax-js'
 import cloud1 from '../images/cloud1.png';
 import cloud2 from '../images/cloud2.png';
 import jquery from 'jquery';
+import stellar from 'jquery.stellar';
 class Page extends Component {
 	
 	constructor(props) {
