@@ -604,9 +604,17 @@ class Page extends Component {
 				{/* Home Page Code */}
 				<> {(PageCode === "home") ? (
 						<>
-					
 							<div className="hero-home">
-								<div className="hero_parallax" data-friction-x="0.40" data-friction-y="0.40" data-scalar-x="15.0" data-scalar-y="15.0" id="scene">
+								<div class="hero_parallax" id="scene" style={{transform: "translate3d(0px, 0px, 0px) rotate(0.0001deg)", transformStyle: "preserve-3d", backfaceVisibility: "hidden", pointerEvents: "none"}}>
+								<div class="hero_layer hero_bg" style={{backgroundImage: "url(https://development.revelation.digital/wp-content/themes/revelation/images/hero/bg.jpg)", transform: "translate3d(0px, 0px, 0px)", transformStyle: "preserve-3d", backfaceVisibility: "hidden", position: "relative", display: "block", left: "0px", top: "0px"}}></div>
+								<div data-depth="0.3" class="hero_layer" style={{backgroundImage: "url(https://development.revelation.digital/wp-content/themes/revelation/images/hero/smoke1.png)", transform: "translate3d(32.5px, -6px, 0px)",transformStyle: "preserve-3d", backfaceVisibility: "hidden", position: "absolute", display: "block", left: "0px", top:"0px"}}></div>
+								<div data-depth="0.20" class="hero_layer" style={{backgroundImage: "url(https://development.revelation.digital/wp-content/themes/revelation/images/hero/devices.png)", transform: "translate3d(21.7px, -4px, 0px)", transformStyle: "preserve-3d", backfaceVisibility: "hidden", position: "absolute", display: "block", left: "0px", top: "0px"}}></div>
+								<div data-depth="0.15" class="hero_layer" style={{backgroundImage: "url(https://development.revelation.digital/wp-content/themes/revelation/images/hero/smoke2.png)", transform: "translate3d(16.2px, -3px, 0px)", transformStyle: "preserve-3d", backfaceVisibility: "hidden", position: "absolute", display: "block", left: "0px", top: "0px"}}></div>
+								<div data-depth="0.06" class="hero_layer" style={{backgroundImage: "url(https://development.revelation.digital/wp-content/themes/revelation/images/hero/detective.png)", transform: "translate3d(6.5px, -1.2px, 0px)", transformStyle: "preserve-3d", backfaceVisibility: "hidden", position: "absolute", display: "block", left: "0px",top: "0px"}}></div>
+								<div data-depth="0.06" class="hero_layer hero_flare" style={{backgroundImage: "url(https://development.revelation.digital/wp-content/themes/revelation/images/hero/flare.png)", transform: "translate3d(6.5px, -1.2px, 0px)", transformStyle: "preserve-3d", backfaceVisibility: "hidden", position: "absolute", display: "block", left: "0px", top: "0px"}}></div>
+								<div data-depth="-0.50" class="hero_layer" style={{backgroundImage: "url(https://development.revelation.digital/wp-content/themes/revelation/images/hero/smoke3.png)", transform: "translate3d(-54.1px, 10px, 0px)", transformStyle: "preserve-3d", backfaceVisibility: "hidden", position: "absolute", display: "block", left: "0px", top: "0px"}}></div>
+							</div>
+								{/* <div className="hero_parallax" data-friction-x="0.40" data-friction-y="0.40" data-scalar-x="15.0" data-scalar-y="15.0" id="scene">
 								  <div id="foglayer_01" class="fog">
 									   <div class="image01"></div>
 									   <div class="image02"></div>
@@ -629,7 +637,7 @@ class Page extends Component {
 									<div data-depth="0.06" className="hero_layer" style={{backgroundImage: "url(https://development.revelation.digital/img/detective.webp)"}}  ></div>
 									<div data-depth="0.06" className="hero_layer hero_flare" style={{backgroundImage: "url("+flare+")"}}  ></div>
 									<div data-depth="-0.50" className="hero_layer" style={{backgroundImage: "url(https://development.revelation.digital/img/smoke3.webp)"}} ></div>
-								</div>
+								</div> */}
 							</div>
 							
 							<div className="hero-home-title">
