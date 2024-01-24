@@ -231,10 +231,6 @@ class Page extends Component {
 					<meta property="twitter:card" content="summary_large_image"></meta>
 					<meta property="twitter:title" content={seo.twittertitle}></meta>
 					<meta property="twitter:description" content={seo.twitterdescription}></meta>
-					<script type="text/javascript" src="https://development.revelation.digital/wp-includes/js/jquery/jquery.min.js"></script>
-					<script>
-						$('img').stellar();
-					</script>
 					<script type="application/ld+json">{JSON.stringify(ldJsonlocal)}</script>
 
 
