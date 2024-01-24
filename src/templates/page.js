@@ -232,7 +232,9 @@ class Page extends Component {
 					<meta property="twitter:title" content={seo.twittertitle}></meta>
 					<meta property="twitter:description" content={seo.twitterdescription}></meta>
 
-					
+					<script>
+						$('img').stellar();
+					</script>
 					<script type="application/ld+json">{JSON.stringify(ldJsonlocal)}</script>
 
 
