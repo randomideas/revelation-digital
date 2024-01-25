@@ -14315,4 +14315,15 @@ h2.footer-heading {
   z-index: 1;
   background-repeat: no-repeat;
 }
+section.about-top-intro {
+  margin-bottom: 0 !important;
+}
+.about-top-section {
+  margin-top: 8.6805555556vw !important;
+  margin-bottom: 24.3055555556vw !important;
+  padding-top: 0 !important !important;
+}
+.about-top-section .top-section-text h1 span.text-bebas {
+  margin-top: 0 !important;
+}
 

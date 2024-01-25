@@ -158,7 +158,7 @@ class CSD extends Component {
 							<section className="cs_results-section section--normal-margin">
 								<div className="container">
 									<div className="cs_results-title">
-										<h2>{section.title}</h2>
+										<h2>THE {section.title}</h2>
 									</div>
 									{section.list.map((lists) =>
 										<div className={(lists.reversed_alignment) ? ("cs_results-row cs_results-row--reversed") : ("cs_results-row")}>
@@ -227,7 +227,7 @@ class CSD extends Component {
 							<section className="cs_work-section section--normal-margin">
 								<div className="container">
 									<div className="cs_results-title cs_results-title--work">
-										<h2>{section.title}</h2>
+										<h2>THE {section.title}</h2>
 									</div>
 									{section.subsections.map((subsection,i) =>
 										<>
