@@ -135,7 +135,7 @@ class Footer extends Component {
 			<div className="footer-bottom">
         <div className="row">
           <div className="col col--6 col--sm-12">
-	        <p>&copy;  Revelation Digital Media | All rights reserved<br />A <a href="http://www.statusproductions.com.au" target="_blank"  rel="noreferrer noopener">Status Productions Pty Ltd</a> Company</p>
+	        <p>&copy; 2024 Revelation Digital Media | All rights reserved<br />A <a href="http://www.statusproductions.com.au" target="_blank"  rel="noreferrer noopener">Status Productions Pty Ltd</a> Company</p>
             {/* <p>Site by <a href="https://www.qltech.com.au/">QL Tech</a></p> */}
           </div>
           <div className="col col--6 col--sm-12">
