@@ -64,7 +64,7 @@ class Footer extends Component {
 								</ul>
 							</div>
 							<div className="col col--3 col--sm-12">
-							<h2 class="footer-heading">Marketing Services</h2>
+							<h2 class="footer-heading">Media Services</h2>
 								<ul className="menu-sm">
 									{(this.state.showInfo === 1) ? (
 										<>

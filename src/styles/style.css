@@ -14321,12 +14321,45 @@ section.about-top-intro {
 .about-top-section {
   margin-top: 8.6805555556vw !important;
   margin-bottom: 24.3055555556vw !important;
-  padding-top: 0 !important !important;
+  padding-top: 0 !important;
 }
 .about-top-section .top-section-text h1 span.text-bebas {
   margin-top: 0 !important;
 }
 .cs_results-maintitle {
   color: #b019d4 !important;
+}
+.case-study-hero-section .case-study-hero-text h1 {
+  -webkit-text-stroke: 1px white;
+  -webkit-text-fill-color: transparent;
+}
+.case-study-intro-section {
+  padding-top: 250px;
+  position: relative;
+  overflow: hidden;
+}
+.cs_simple-text p {
+  color: #fff;
+  font-size: 1.5vw;
+  line-height: 1.2;
+}
+.cs_results-maintitle {
+  text-transform: uppercase;
+  font-family: "BebasNeue";
+  font-size: 9.7222222222vw;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.013em;
+  color: #b019d4 !important;
+  -webkit-text-fill-color: #b019d4 !important;
+  -webkit-text-stroke: 1px #b019d4;
+}
+.cs_results-title h2 {
+  text-transform: uppercase;
+  font-family: "BebasNeue";
+  font-size: 9.7222222222vw;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.013em;
 }
 
