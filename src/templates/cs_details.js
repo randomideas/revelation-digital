@@ -173,14 +173,14 @@ class CSD extends Component {
 												</div>
 												)}
 											</div>
-											<div className="cs_results-row__col cs_results-row__col--text">
+											{/* <div className="cs_results-row__col cs_results-row__col--text">
 											<ReactWOW  animation={(lists.reversed_alignment) ? ("fadeInLeft") : ("fadeInRight")}>	
 											  <div className={(lists.reversed_alignment) ? ("cs_results-row-text") : ("cs_results-row-text")}>
 												<h3>{lists.text}</h3>
 												<p>{lists.subtext}</p>
 											  </div>
 											  </ReactWOW>
-											</div>
+											</div> */}
 										</div>
 									)}
 								</div>
