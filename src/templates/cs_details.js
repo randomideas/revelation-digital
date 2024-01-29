@@ -260,7 +260,7 @@ class CSD extends Component {
 											</div>
 										) : ("")}
 										</>
-										{/* <>
+										<>
 										{(subsection.type === 'icons') ? (
 											<div className="cs_work-subsection--icons">
 												<div className="container">
@@ -277,7 +277,7 @@ class CSD extends Component {
 												</div>
 											</div>
 										) : ("")}
-										</> */}
+										</>
 										<>
 										{(subsection.type === 'image') ? (
 											 <div className="cs_work-subsection">
