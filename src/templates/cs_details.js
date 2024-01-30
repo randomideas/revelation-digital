@@ -204,7 +204,7 @@ class CSD extends Component {
 											<div className="cs_revelations-list-item">
 												<ReactWOW animation='fadeIn'>
 												<div className="cs_revelations-list-item__index">
-												{(i+1)}
+												{(lists.stat)}
 												</div>
 												</ReactWOW>
 												<ReactWOW animation='fadeInRight'>
