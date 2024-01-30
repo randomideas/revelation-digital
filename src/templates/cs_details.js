@@ -318,7 +318,7 @@ class CSD extends Component {
 								</span>
 								<ReactWOW  animation='fadeInUp'>
 								<div className="quote">
-								  <p className="quote-title text-bebas text-bebas--big text-bebas--stroke">{section.title}</p>
+								  <p className="quote-title text-bebas text-bebas--big text-bebas--stroke">THE CLIENT {section.title}</p>
 								  <blockquote className="content-area">
 									<span dangerouslySetInnerHTML={{ __html: section.text}} ></span>
 									<cite>{section.cite}</cite>
