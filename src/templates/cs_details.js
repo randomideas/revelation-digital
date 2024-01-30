@@ -152,7 +152,7 @@ class CSD extends Component {
 					) : ("")}
 					</>
 					
-					<>
+					{/* <>
 					{(section.acf_fc_layout === "results") ? (
 						<>
 							<section className="cs_results-section section--normal-margin">
@@ -173,14 +173,14 @@ class CSD extends Component {
 												</div>
 												)}
 											</div>
-											{/* <div className="cs_results-row__col cs_results-row__col--text">
+											<div className="cs_results-row__col cs_results-row__col--text">
 											<ReactWOW  animation={(lists.reversed_alignment) ? ("fadeInLeft") : ("fadeInRight")}>	
 											  <div className={(lists.reversed_alignment) ? ("cs_results-row-text") : ("cs_results-row-text")}>
 												<h3>{lists.text}</h3>
 												<p>{lists.subtext}</p>
 											  </div>
 											  </ReactWOW>
-											</div> */}
+											</div>
 										</div>
 									)}
 								</div>
@@ -188,7 +188,7 @@ class CSD extends Component {
 						</>
 					) : ("")}
 					</>
-					
+					 */}
 					<>
 					{(section.acf_fc_layout === "revelations") ? (
 						<>
@@ -196,7 +196,7 @@ class CSD extends Component {
 							<div className="cs_revelations-artwork" data-stellar-ratio="1.1" style={{backgroundImage: "url("+section.image.url+")"}} ></div>
 							<div className="container">
 								<div className="cs_results-title cs_results-title--revelations">
-									<h2>{section.title}</h2>
+									<h2><span className="cs_results-stroke">The </span><span className="cs_results-maintitle">{section.title}</span></h2>
 								</div>
 								<div className="cs_revelations-list">
 									{section.list.map((lists,i) =>
