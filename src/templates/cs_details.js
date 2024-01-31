@@ -131,7 +131,7 @@ class CSD extends Component {
 					) : ("")}
 					</>
 					
-					<>
+					{/* <>
 					{(section.acf_fc_layout === "products_used") ? (
 						<>
 							<section className="cs_products-used-section section--normal-margin">
@@ -150,7 +150,7 @@ class CSD extends Component {
 							</section>
 						</>
 					) : ("")}
-					</>
+					</> */}
 					
 					{/* <>
 					{(section.acf_fc_layout === "results") ? (
