@@ -286,7 +286,7 @@ class Page extends Component {
 							</div>
 						</section>
 						
-						<div className="section-divided-text">
+						<div className="section-divided-text aboutus-middle-content">
 							<div className="container">
 								{base.about_text.map((prop,i) => {return (
 								<div className="divided-text-wrapper">
