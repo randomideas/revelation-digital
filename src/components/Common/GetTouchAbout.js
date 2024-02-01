@@ -52,4 +52,4 @@ class GetTouchAbout extends Component {
 
 
 
-export default GetTouch
+export default GetTouchAbout
