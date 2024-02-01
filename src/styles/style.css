@@ -14366,3 +14366,12 @@ section.about-top-intro {
   margin-top: 0 !important;
 }
 
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+.social-icons.getintouch-remove .get-in-touch.get-in-touch--client-stories.no-triangle::after {
+  content: "";
+  display: none;
+}
+
