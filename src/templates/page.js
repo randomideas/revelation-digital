@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import Nav from "../components/Common/Nav"
 import Testimonials from "../components/Common/Testimonials"
 import GetTouch from "../components/Common/GetTouch"
+import GetTouchAbout from "../components/Common/GetTouchAbout"
 import Listing from "../components/CSC/Listing"
 import { Helmet } from "react-helmet"
 import Counter from 'react-number-counter'
@@ -364,7 +365,7 @@ class Page extends Component {
 							</div>
 						</section>
 						<Testimonials/>
-						<GetTouch/>
+						<GetTouchAbout/>
 						</>
 					) : ("")} 
 				</>

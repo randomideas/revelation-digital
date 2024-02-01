@@ -489,7 +489,7 @@ class CSD extends Component {
 				)}
 				</> ) : ("")}
 
-				<div className="section-find-more mb50">
+				{/* <div className="section-find-more mb50">
 	<div className="container">
 	<div className="row">
 			<div className="col3">
@@ -528,7 +528,7 @@ class CSD extends Component {
 			</div>
 	</div>
 	</div>
-</div>
+</div> */}
 				
 				{this.props.pageContext.Data.Data.more_links.map((links) => 
 					<div className="section-find-more">
