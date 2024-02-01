@@ -14362,4 +14362,7 @@ section.about-top-intro {
   line-height: 1;
   letter-spacing: 0.013em;
 }
+.aboutus-middle-content h3 {
+  margin-top: 0 !important;
+}
 
