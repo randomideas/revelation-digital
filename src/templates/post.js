@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import ReactWOW from 'react-wow'
 import Layout from "../components/layout"
 import { Helmet } from "react-helmet"
-import GetTouch from "../components/Common/GetTouch"
+import GetTouchDiff from "../components/Common/GetTouchDiff"
 import { Link} from 'gatsby'
 import Slider from "react-slick";
 import LazyLoad from 'react-lazyload';
@@ -63,7 +63,7 @@ class Post extends Component {
 							</div>
 						</div>
 				
-				<GetTouch/>
+				<GetTouchDiff/>
 				</>
 			</Layout>
 			

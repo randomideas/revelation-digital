@@ -3,7 +3,7 @@ import axios from "axios"
 import ReactWOW from 'react-wow'
 
 
-class GetTouchAbout extends Component {
+class GetTouchDiff extends Component {
 	
 	
 	state = {
@@ -22,7 +22,7 @@ class GetTouchAbout extends Component {
     }
 	render() {
 		return (
-			<div className="social-icons getintouch-aboutus">
+			<div className="social-icons getintouch-remove">
 				{(this.state.showInfo === 1) ? (
 					<>
 						<div className="get-in-touch get-in-touch--client-stories no-triangle" data-stellar-background-ratio=".2">
@@ -52,4 +52,4 @@ class GetTouchAbout extends Component {
 
 
 
-export default GetTouchAbout
+export default GetTouchDiff
