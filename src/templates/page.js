@@ -88,6 +88,7 @@ class Page extends Component {
 		var is_page = 0;
 		if(PageCode === "about"){
 			var base = this.props.pageContext.Data.data.additional_data.About;
+			console.log(base);
 			is_page = 1;
 		}
 		if(PageCode === "brief-us"){
