@@ -18674,4 +18674,14 @@ h3 {
   
   
 }
+.about-top-intro .text-bebas span.text-bebas.text-bebas--big {
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #fff !important;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: 1px #fff;
+}
+.about-top-intro .text-bebas br {
+    display: none !important;
+}
 
