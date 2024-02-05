@@ -18673,6 +18673,7 @@ h3 {
   }
   
   
+  
 }
 .about-top-intro .text-bebas span.text-bebas.text-bebas--big {
     margin: 0 !important;
@@ -18684,4 +18685,14 @@ h3 {
 .about-top-intro .text-bebas br {
     display: none !important;
 }
+
+@media (max-width: 767px){
+  .about-top-intro .pink-wrapper-text {
+      top: 0 !important;
+      height: 36.5% !important;
+      width: 100% !important;
+      left: 0px !important;
+  }
+  }
+
 
