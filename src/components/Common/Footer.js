@@ -56,7 +56,7 @@ class Footer extends Component {
 										<>
 										{this.state.pagedata.Successstories.map((prop,i) => {return (
 											<li key={"Menu"+i} className={("/"+prop.Slug === str_url) ? ("current-menu-item") : ("")} >
-										<a  href={"/"+prop.Slug} >{prop.Name}</a>
+										<a  href={"/case-studies/"+prop.Slug} >{prop.Name}</a>
 											</li>
 										)})}
 										</>
