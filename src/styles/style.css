@@ -18720,7 +18720,12 @@ h3 {
 @media (max-width: 767px){
 	section.cs_work-section.section--normal-margin .cs_results-title.cs_results-title--work span.cs_results-maintitle {
     font-size: 50px;
+  }
 }
+@media (max-width: 767px){
+  section.cs_revelations-section.section--normal-margin .cs_results-title.cs_results-title--revelations span.cs_results-maintitle {
+      font-size: 50px !important;
+  }
 }
 
 
