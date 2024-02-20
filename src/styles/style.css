@@ -18728,4 +18728,9 @@ h3 {
   }
 }
 
+.cs_revelations-list .cs_revelations-list-item .cs_revelations-list-item__index.fadeIn {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px hsl(0 0% 100% / 1) !important;
+}
+
 
