@@ -318,8 +318,8 @@ class CSD extends Component {
 								</span>
 								<ReactWOW  animation='fadeInUp'>
 								<div className="quote">
-								<h2><span class="cs_results-stroke">The </span><span class="cs_results-maintitle">CLIENT</span></h2>
-								  {/* <p className="quote-title text-bebas text-bebas--big text-bebas--stroke">THE CLIENT</p> */}
+								{/* <h2><span class="cs_results-stroke">The </span><span class="cs_results-maintitle">CLIENT</span></h2> */}
+								  <p className="quote-title text-bebas text-bebas--big text-bebas--stroke"><span class="cs_results-stroke">The </span><span class="cs_results-maintitle">CLIENT</span></p>
 								  <blockquote className="content-area">
 									<span dangerouslySetInnerHTML={{ __html: section.text}} ></span>
 									<cite>{section.cite}</cite>
