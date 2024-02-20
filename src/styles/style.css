@@ -18732,5 +18732,8 @@ h3 {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px hsl(0 0% 100% / 1) !important;
 }
+.text-bebas--big span.cs_results-stroke {
+  font-size: 9.7222222222vw;
+}
 
 
