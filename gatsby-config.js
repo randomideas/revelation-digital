@@ -25,9 +25,6 @@ module.exports = {
      * See https://www.gatsbyjs.com/docs/gatsby-image/#setting-up-gatsby-image
      * if you're curious about it.
      */
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
