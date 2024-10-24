@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-wordpress-blog",
+  "name": "revelation-digital",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "revelation-digital",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com> and Tyler Barnes <tylerdbarnes@gmail.com>",
+  "author": "QL Tech",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
