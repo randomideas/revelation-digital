@@ -28,7 +28,7 @@ class Post extends Component {
 			<Layout>
 				<>
 				<Helmet>
-					<title>{this.props.pageContext.Data.title} . Revelation Digital </title>
+					<title>{this.props.pageContext.Data.title} . Revelation Digital Testing </title>
 					<meta name="title" content={this.props.pageContext.Data.title}></meta>
 				<meta name="description" content={this.props.pageContext.Data.meta}></meta>
 				 <meta name="keywords" content=""></meta>
