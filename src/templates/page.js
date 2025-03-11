@@ -567,7 +567,7 @@ class Page extends Component {
 									</svg>
 								</button>
 								<div className="popup-container">
-									<Link to={"/"} className="logo"><img src={ContactLogo} alt="Revelation Digital"/></Link>
+									<a href={"/"} className="logo"><img src={ContactLogo} alt="Revelation Digital"/></a>
 									<h3 className="text-bebas text-bebas--big text-bebas--stroke leave-details-text whiteline">{(propforms.form == 4) ? ("Brief Us") : (<>{propforms.title}</>)}</h3>
 										{(propforms.form == 4) ? (<><iframe height="4300" width="100%" frameBorder="0" src={"https://development.revelation.digital/gravity-page/?gid="+propforms.form} title="description" /></>) :(<><iframe height="850" width="100%" frameBorder="0" src={"https://development.revelation.digital/gravity-page/?gid="+propforms.form} title="description" /></>)}
 									  

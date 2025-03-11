@@ -41,9 +41,9 @@ class Header extends Component {
 				<header className={this.state.show === false ? "header" : "header body-menu-open"} >
 					<a href="#" className="header-toggle" onClick={()=>{this.setState({show:!this.state.show})}} >menu toggle</a>
 					<div className="header-content">
-						<Link to="/" className="logo">
+						<a href="/" className="logo">
 							<img width="356" height="58" src="https://development.revelation.digital/wp-content/uploads/2020/02/logo.svg" alt="Revelation Digital"/>
-						</Link>
+						</a>
 					</div>
 				</header>
 					<div className="menu-wrapper" style={{ display: this.state.show === false ? "none" : "block" }} >
