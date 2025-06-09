@@ -53,7 +53,7 @@ class Header extends Component {
 							<>
 							{this.state.pagedata.map((prop,i) => {return (
 								<li key={"Menu"+i} className={("/"+prop.Slug === str_url) ? ("current-menu-item") : ("")} >
-							<Link  to={"/"+prop.Slug} >{prop.Name}</Link>
+							<a  href={"/"+prop.Slug} >{prop.Name}</a>
 								</li>
 							)})}
 							</>
