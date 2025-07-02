@@ -35,6 +35,7 @@ class Footer extends Component {
 				<div className="container">
 					<div className="footer-top">
 						<div className="row">
+			<p>Email us at</p>
 							<div className="col col--3 col--sm-12">
 							<h2 class="footer-heading">Solutions</h2>
 								<ul className="menu-sm">
