@@ -9,39 +9,7 @@
 new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"undefined"!=typeof a[f])try{var g=[];c[f]=JSON.stringify(a[f],function(l,t){try{if("function"!==typeof t){if("object"===typeof t&&null!==t){if(t instanceof HTMLElement||t instanceof Node||-1!=g.indexOf(t))return;g.push(t)}return t}}catch(A){}})}catch(l){}a=document.createEvent("CustomEvent");a.initCustomEvent("TvtRetrievedVariablesEvent",!0,!0,{variables:c,date:b});window.dispatchEvent(a)};window.setTimeout(function() {tvt.captureVariables({'dataLayer.hide': (function(a){a=a.split(".");for(var b=window,c=0;c<a.length&&(b=b[a[c]],b);c++);return b})('dataLayer.hide'),'gaData': window['gaData'],'dataLayer': window['dataLayer']})}, 2000);</script></head>
 <style>/* cyrillic-ext */
 
-@font-face{
-  font-family: 'BebasNeue';
-  src: url(Bebas-Regular.ttf);
-}
 
-@font-face{
-  font-family: 'Texta-regular';
-  src: url(Texta-Regular.otf);
-}
-
-@font-face{
-  font-family: 'Texta-heavy';
-  src: url(Texta-Heavy.otf);
-}
-
-
-@font-face{
-  font-family: 'Texta-italic';
-  src: url(Texta-Italic.otf);
-}
-
-
-@font-face{
-  font-family: 'Texta-light';
-  src: url(Texta-Light-Italic.otf);
-}
-
-
-@font-face{
-
-  font-family: 'Webdings';
-  src: url(Webdings.ttf);
-}
 
     body {
       margin-top: 40px;
